@@ -32,8 +32,6 @@ Below are some screenshots showcasing the application's features:
 | ![Inbox/Outbox](screenshots/inboxoutboxetc.jpg) | Full inbox and outbox control.      |
 | ![Permissions](screenshots/permission.jpg) | Manage app permissions effectively. |
 | ![Prompt](screenshots/prompt.jpg) | Intuitive user prompts.               |
-| ![Stories](screenshots/stories.jpg) | Visual representation of usage.      |
-
 ---
 
 ## Installation
