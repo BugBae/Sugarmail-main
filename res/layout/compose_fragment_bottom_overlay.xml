@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:textSize="16.0sp" android:textColorHint="?android:textColorHint" android:id="@id/compose_bottom_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" class="org.kman.email2.compose.ComposeOverlayBottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/compose_signature_clear" android:background="?android:selectableItemBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_24dp" android:contentDescription="@string/access_signature_clear" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/compose_signature_change" android:background="?android:selectableItemBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_vert_24dp" android:contentDescription="@string/access_signature_change" android:layout_toStartOf="@id/compose_signature_clear" />
+    <RelativeLayout android:id="@id/compose_original_wrapper" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/compose_original_edit" android:background="?android:selectableItemBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_compose_24dp" android:contentDescription="@string/access_original_edit" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/compose_original_show" android:background="?android:selectableItemBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_visibility_24dp" android:contentDescription="@string/access_original_show" android:layout_toStartOf="@id/compose_original_edit" />
+        <CheckBox android:gravity="start|center" android:id="@id/compose_original_include" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/compose_original_include" android:textAlignment="viewStart" android:layout_toStartOf="@id/compose_original_show" />
+    </RelativeLayout>
+</view>

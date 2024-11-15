@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?messageThreadSentColor" />
+    <corners android:radius="8.0dip" />
+    <padding android:left="@dimen/message_thread_preview_padding" android:top="@dimen/message_thread_preview_padding" android:right="@dimen/message_thread_preview_padding" android:bottom="@dimen/message_thread_preview_padding" />
+</shape>

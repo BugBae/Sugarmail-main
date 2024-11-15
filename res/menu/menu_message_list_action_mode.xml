@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_delete_24dp" android:id="@id/action_move_deleted" android:title="@string/action_move_deleted" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_delete_forever_24dp" android:id="@id/action_delete_now_icon" android:title="@string/action_delete_now" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_star_24dp" android:id="@id/action_star_set" android:title="@string/action_star_set" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_star_border_24dp" android:id="@id/action_star_clear" android:title="@string/action_star_clear" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_drafts_24dp" android:id="@id/action_mark_read" android:title="@string/action_mark_read" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_markunread_24dp" android:id="@id/action_mark_unread" android:title="@string/action_mark_unread" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_select_all" android:title="@string/action_select_all" />
+    <item android:icon="@drawable/ic_folder_24dp" android:id="@id/action_move_to" android:title="@string/action_move_to" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_snooze" android:title="@string/action_snooze" />
+    <item android:id="@id/action_add_to_bundle" android:title="@string/action_add_to_bundle" />
+    <item android:id="@id/action_categories" android:visible="false" android:title="@string/action_categories" />
+    <item android:id="@id/action_move_archive" android:title="@string/action_move_archive" />
+    <item android:id="@id/action_move_spam" android:title="@string/action_move_spam" />
+    <item android:id="@id/action_block_sender" android:title="@string/action_block_sender" />
+    <item android:id="@id/action_delete_now_text" android:title="@string/action_delete_now" />
+</menu>

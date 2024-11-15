@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/search_dialog_background" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/search_dialog_expand" android:background="?android:selectableItemBackground" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_expand_more_24dp" android:scaleType="center" android:contentDescription="@string/access_expand" android:layout_alignParentEnd="true" />
+    <view android:id="@id/search_dialog_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/search_hint" android:inputType="textAutoComplete" android:imeOptions="actionSearch|flagNoExtractUi|flagNoFullscreen" android:layout_toStartOf="@id/search_dialog_expand" class="org.kman.email2.search.SearchEditText" />
+    <LinearLayout android:orientation="vertical" android:id="@id/search_dialog_options" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_dialog_edit">
+        <RadioGroup android:id="@id/search_option_where_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/search_option_where_all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_option_where_all" />
+            <RadioButton android:id="@id/search_option_where_headers" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_option_where_headers" />
+            <RadioButton android:id="@id/search_option_where_sender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_option_where_sender" />
+        </RadioGroup>
+        <CheckBox android:id="@id/search_option_with_attachments" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_option_with_attachments" />
+    </LinearLayout>
+</RelativeLayout>

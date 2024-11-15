@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/message_list_action_mode" android:layout_width="fill_parent" android:layout_height="fill_parent" class="org.kman.email2.view.ActionModeLayout">
+        <view android:id="@id/message_list_swipe" android:layout_width="fill_parent" android:layout_height="fill_parent" class="org.kman.email2.view.SwipeCommandLayout">
+            <view android:id="@id/message_list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" class="org.kman.email2.view.MessageListView" />
+        </view>
+        <FrameLayout android:id="@id/message_list_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:textColor="?android:textColorSecondary" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_messages" />
+        </FrameLayout>
+    </view>
+</FrameLayout>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="org.kman.email2" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission-sdk-23 android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission-sdk-23 android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <queries>
+        <package android:name="com.google.android.gms"/>
+        <package android:name="com.android.vending"/>
+        <package android:name="com.huawei.hwid"/>
+        <package android:name="com.google.android.apps.translate"/>
+        <package android:name="ru.yandex.translate"/>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="tel"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="smsto"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.yandex.auth.action.YA_SDK_LOGIN"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <permission android:name="org.kman.email2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="org.kman.email2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="org.kman.email2.backup.MyBackupAgent" android:extractNativeLibs="false" android:fullBackupContent="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:localeConfig="@xml/locale_config" android:name="org.kman.email2.Email2Application" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIsW1iNkDfgGO71J4vj3xWq8y-8_M-8oQyx76I_Q"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <service android:exported="true" android:name="org.kman.email2.sync.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="org.kman.email2.MainActivity" android:theme="@style/AppThemeLaunch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_EMAIL"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:label="@string/prefs_backup_header_title" android:name="org.kman.email2.backup.BackupActivity$Light" android:theme="@style/AppThemeDialogWhenLarge"/>
+        <activity android:label="@string/prefs_backup_header_title" android:name="org.kman.email2.backup.BackupActivity$Color" android:theme="@style/AppThemeDialogWhenLargeColor"/>
+        <activity android:label="@string/prefs_backup_header_title" android:name="org.kman.email2.backup.BackupActivity$Dark" android:theme="@style/AppThemeDialogWhenLargeDark"/>
+        <activity android:label="@string/action_settings" android:name="org.kman.email2.prefs.MySettingsActivity" android:theme="@style/AppThemeLaunch"/>
+        <activity android:name="org.kman.email2.setup.AccountTypeActivity$Light" android:theme="@style/AppThemeDialogWhenLarge"/>
+        <activity android:name="org.kman.email2.setup.AccountTypeActivity$Color" android:theme="@style/AppThemeDialogWhenLargeColor"/>
+        <activity android:name="org.kman.email2.setup.AccountTypeActivity$Dark" android:theme="@style/AppThemeDialogWhenLargeDark"/>
+        <activity android:name="org.kman.email2.setup.AccountSettingsActivity$Light" android:theme="@style/AppTheme"/>
+        <activity android:name="org.kman.email2.setup.AccountSettingsActivity$Color" android:theme="@style/AppThemeColor"/>
+        <activity android:name="org.kman.email2.setup.AccountSettingsActivity$Dark" android:theme="@style/AppThemeDark"/>
+        <activity android:label="@string/server_settings_please_log_in" android:name="org.kman.email2.oauth.AuthFlowActivity" android:theme="@style/AppThemeDialogWhenLarge"/>
+        <activity android:label="@string/server_settings_please_log_in" android:name="org.kman.email2.oauth.OauthWebBridgeActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="org.kman.email2.setup.AliasSettingsActivity$Light" android:theme="@style/AppTheme"/>
+        <activity android:name="org.kman.email2.setup.AliasSettingsActivity$Color" android:theme="@style/AppThemeColor"/>
+        <activity android:name="org.kman.email2.setup.AliasSettingsActivity$Dark" android:theme="@style/AppThemeDark"/>
+        <activity android:exported="true" android:label="@string/server_settings_please_log_in" android:name="org.kman.email2.oauth.OauthWebRedirectActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="org.kman.email2"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.googleusercontent.apps.493669576512-01up8a9gdkjnl5vnkp81m26tm7cv2ci5"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.googleusercontent.apps.493669576512-m874073inrjq1hs2ukko3kqnh5mgjael"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.googleusercontent.apps.493669576512-v68r86kav8ssp0mmpo45oeinrnrfgtcl"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.googleusercontent.apps.493669576512-c07vd0598oigoh32e7ab18oahpaoa9kc"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.googleusercontent.apps.493669576512-vrnhtd64gtiositvsrmlsqdm6sthfvel"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.googleusercontent.apps.493669576512-em5fganeb290ao789j0tuf4j9u9bne4i"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.kman.email2.prefs.AccountOptionsActivity$Light" android:theme="@style/AppTheme"/>
+        <activity android:name="org.kman.email2.prefs.AccountOptionsActivity$Color" android:theme="@style/AppThemeColor"/>
+        <activity android:name="org.kman.email2.prefs.AccountOptionsActivity$Dark" android:theme="@style/AppThemeDark"/>
+        <activity android:name="org.kman.email2.prefs.SaveToActivity$Light" android:theme="@style/DialogActivity"/>
+        <activity android:name="org.kman.email2.prefs.SaveToActivity$Color" android:theme="@style/DialogActivityColor"/>
+        <activity android:name="org.kman.email2.prefs.SaveToActivity$Dark" android:theme="@style/DialogActivityDark"/>
+        <receiver android:exported="true" android:name="org.kman.email2.core.MailNotificationManager$ActionReceiver">
+            <intent-filter>
+                <action android:name="org.kman.email2.ACTION_DELETE"/>
+                <action android:name="org.kman.email2.ACTION_MARK_READ"/>
+                <action android:name="org.kman.email2.ACTION_REPLY"/>
+                <action android:name="org.kman.email2.ACTION_SNOOZE"/>
+                <action android:name="org.kman.email2.ACTION_ARCHIVE"/>
+                <action android:name="org.kman.email2.ACTION_SPAM"/>
+                <action android:name="org.kman.email2.ACTION_BLOCK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="org.kman.email2.core.MailNotificationManager$CancelReceiver">
+            <intent-filter>
+                <action android:name="org.kman.email2.ACTION_CANCEL"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="org.kman.email2.sync.MailSyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="org.kman.email2.sync.ContactSyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="org.kman.email2.sync.CalendarSyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="org.kman.email2.sync.RefreshTokenJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="org.kman.email2.account.SyncAccountSettingsService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="org.kman.email2.account.mailsync" android:exported="false" android:label="@string/account_sync_provider_label_mail" android:name="org.kman.email2.account.MailSyncContentProvider" android:syncable="true"/>
+        <service android:exported="true" android:name="org.kman.email2.account.AccountAuthenticatorServiceInternet">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/account_authenticator_internet"/>
+        </service>
+        <service android:exported="true" android:name="org.kman.email2.account.MailSyncServiceInternet">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/account_sync_adapter_internet"/>
+        </service>
+        <service android:exported="true" android:name="org.kman.email2.account.AccountAuthenticatorServiceExchange">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/account_authenticator_exchange"/>
+        </service>
+        <service android:exported="true" android:name="org.kman.email2.account.MailSyncServiceExchange">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/account_sync_adapter_exchange_mail"/>
+        </service>
+        <service android:exported="true" android:name="org.kman.email2.account.ContactSyncServiceExchange">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/account_sync_adapter_exchange_contacts"/>
+            <meta-data android:name="android.provider.CONTACTS_STRUCTURE" android:resource="@xml/contacts_edit_schema"/>
+        </service>
+        <service android:exported="true" android:name="org.kman.email2.account.CalendarSyncServiceExchange">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/account_sync_adapter_exchange_calendar"/>
+        </service>
+        <provider android:authorities="org.kman.email2.exchange.directory" android:exported="true" android:name="org.kman.email2.directory.ContactDirectory" android:readPermission="android.permission.READ_CONTACTS">
+            <meta-data android:name="android.content.ContactDirectory" android:value="true"/>
+        </provider>
+        <provider android:authorities="org.kman.email2.part" android:exported="true" android:name="org.kman.email2.data.MessagePartProvider"/>
+        <activity android:name="org.kman.email2.ui.ImageViewerActivity" android:theme="@style/ThemeImageViewer"/>
+        <service android:name="org.kman.email2.data.AttachmentStorageJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="true" android:label="@string/counter_widget_label" android:name="org.kman.email2.widget.CounterWidgetConfigure" android:theme="@android:style/Theme.Material.Light.Dialog.MinWidth">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:label="@string/counter_widget_label" android:name="org.kman.email2.widget.CounterWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/counter_widget_info"/>
+        </receiver>
+        <activity android:exported="true" android:label="@string/list_widget_label" android:name="org.kman.email2.widget.ListWidgetConfigure" android:theme="@android:style/Theme.Material.Light.Dialog.MinWidth">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:label="@string/list_widget_label" android:name="org.kman.email2.widget.ListWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/list_widget_info"/>
+        </receiver>
+        <service android:name="org.kman.email2.widget.ListWidgetViewsService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:name="org.kman.email2.widget.WidgetUpdateService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="true" android:name="org.kman.email2.ComposeActivity" android:theme="@style/AppThemeLaunch" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.SENDTO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="mailto"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <meta-data android:name="android.service.chooser.chooser_target_service" android:value=".compose.MyChooserTargetService"/>
+        </activity>
+        <service android:name="org.kman.email2.compose.ComposeWorkerThread$KeepAliveService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="org.kman.email2.compose.QuickReplyService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:label="@string/app_name" android:name="org.kman.email2.compose.MyChooserTargetService" android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.chooser.ChooserTargetService"/>
+            </intent-filter>
+        </service>
+        <activity android:label="@string/snippet_title_default" android:name="org.kman.email2.SnippetEditActivity" android:theme="@style/AppThemeLaunch" android:windowSoftInputMode="adjustResize"/>
+        <provider android:authorities="org.kman.email2.camera" android:exported="false" android:grantUriPermissions="true" android:name="org.kman.email2.compose.CameraFileProvider"/>
+        <service android:name="org.kman.email2.contacts.PortraitRefreshJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="org.kman.email2.core.AppShortcutJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="org.kman.email2.snooze.SnoozeJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="org.kman.email2.core.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="org.kman.email2.search.SearchIndexJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:label="@string/action_save_eml" android:name="org.kman.email2.EmlSaveActivity$Light" android:theme="@style/DialogActivity"/>
+        <activity android:label="@string/action_save_eml" android:name="org.kman.email2.EmlSaveActivity$Color" android:theme="@style/DialogActivityColor"/>
+        <activity android:label="@string/action_save_eml" android:name="org.kman.email2.EmlSaveActivity$Dark" android:theme="@style/DialogActivityDark"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="org.kman.email2.EmlViewActivity" android:theme="@style/AppThemeLaunch">
+            <intent-filter android:scheme="file">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="message/rfc822"/>
+            </intent-filter>
+            <intent-filter android:scheme="content">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="message/rfc822"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/uilock_title" android:name="org.kman.email2.UiLockActivity$Light" android:theme="@style/AppTheme.NoActionBar.Lock"/>
+        <activity android:label="@string/uilock_title" android:name="org.kman.email2.UiLockActivity$Color" android:theme="@style/AppThemeColor.NoActionBar.Lock"/>
+        <activity android:label="@string/uilock_title" android:name="org.kman.email2.UiLockActivity$Dark" android:theme="@style/AppThemeDark.NoActionBar.Lock"/>
+        <activity android:label="@string/welcome_title" android:name="org.kman.email2.WelcomeActivity$Light" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/welcome_title" android:name="org.kman.email2.WelcomeActivity$Color" android:theme="@style/AppThemeColor.NoActionBar"/>
+        <activity android:label="@string/welcome_title" android:name="org.kman.email2.WelcomeActivity$Dark" android:theme="@style/AppThemeDark.NoActionBar"/>
+        <activity android:label="@string/purchase_title" android:name="org.kman.email2.PurchaseActivity$Light" android:theme="@style/AppThemeDialogWhenLarge.NoActionBar"/>
+        <activity android:label="@string/purchase_title" android:name="org.kman.email2.PurchaseActivity$Color" android:theme="@style/AppThemeDialogWhenLargeColor.NoActionBar"/>
+        <activity android:label="@string/purchase_title" android:name="org.kman.email2.PurchaseActivity$Dark" android:theme="@style/AppThemeDialogWhenLargeDark.NoActionBar"/>
+        <receiver android:exported="true" android:name="org.kman.email2.purchase.PurchaseReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.PURCHASES_UPDATED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="org.kman.email2.purchase.PurchaseService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="7.1.1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="org.kman.email2.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="org.kman.email2.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:label="" android:name="com.yandex.authsdk.internal.AuthSdkActivity" android:theme="@style/Theme.AuthSdk.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.yandex.authsdk.internal.BrowserLoginActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.yandex.authsdk.internal.WebViewLoginActivity" android:theme="@style/Theme.AuthSdk"/>
+        <activity android:exported="true" android:name="com.yandex.authsdk.internal.BrowserDataActivity" android:theme="@style/Theme.AuthSdk.Transparent">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="yx35e4971458ff4099a44004e43b138cb3.oauth.yandex.ru" android:path="/auth/finish" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:path="/auth/finish" android:scheme="yx35e4971458ff4099a44004e43b138cb3"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.yandex.auth.CLIENT_ID" android:value="35e4971458ff4099a44004e43b138cb3"/>
+        <meta-data android:name="com.yandex.auth.OAUTH_HOST" android:value="oauth.yandex.ru"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+    </application>
+</manifest>

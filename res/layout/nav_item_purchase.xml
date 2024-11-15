@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/ThemeOverlayDarkWhiteIcons" android:orientation="vertical" android:background="@drawable/nav_bar_header_selectable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/purchase_image" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/ic_clock_24dp_white" android:scaleType="center" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/purchase_image">
+        <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/purchase_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trial_version" />
+        <ProgressBar android:id="@id/purchase_progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:progressBarStyleHorizontal" />
+        <TextView android:textSize="12.0sp" android:textColor="?android:textColorSecondary" android:id="@id/purchase_progress_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/purchase_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/purchase_action_purchase_now" />
+    </LinearLayout>
+</RelativeLayout>

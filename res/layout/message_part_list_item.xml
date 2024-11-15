@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/message_part_item_root" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/message_part_menu" android:background="?android:actionBarItemBackground" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_more_vert_24dp" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@string/access_overflow" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/message_part_image" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_centerVertical="true" android:contentDescription="@string/access_preview" android:layout_toStartOf="@id/message_part_menu" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/message_part_image">
+        <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:ellipsize="middle" android:id="@id/message_part_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureAllChildren="true">
+            <TextView android:textSize="12.0sp" android:textColor="?android:textColorPrimary" android:gravity="center_vertical" android:id="@id/message_part_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:drawablePadding="4.0dip" android:fontFamily="@string/typeface_light" />
+            <org.kman.email2.silly.SillyProgressBar android:layout_gravity="center_vertical" android:id="@id/message_part_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

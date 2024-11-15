@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.kman.email2.view.SharedBogusMenu android:layout_gravity="end|bottom|center" android:background="?messageViewMenuBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:elevation="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="?messageViewMenuTextColor" android:gravity="center" android:id="@id/shared_bogus_menu_text" android:background="?android:actionBarItemBackground" android:layout_width="48.0dip" android:layout_height="48.0dip" android:fontFamily="@string/typeface_medium" android:layout_alignParentStart="true" />
+    <org.kman.email2.bogus.BogusMenuView android:theme="?browseMenuViewTheme" android:id="@id/shared_bogus_menu_menu" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_toEndOf="@id/shared_bogus_menu_text" />
+</org.kman.email2.view.SharedBogusMenu>

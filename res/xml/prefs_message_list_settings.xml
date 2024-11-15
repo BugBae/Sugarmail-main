@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/prefs_title_general">
+        <SwitchPreference android:title="@string/prefs_message_list_contact_images" android:key="prefMessageListContactImages" android:defaultValue="true" />
+        <SwitchPreference android:title="@string/prefs_message_list_stars" android:key="prefMessageListStars" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/prefs_message_list_stars_only_starred" android:key="prefMessageListStarsOnlyStarred" android:dependency="prefMessageListStars" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/prefs_message_list_dividers" android:key="prefMessageListDividers" android:defaultValue="true" />
+        <SwitchPreference android:title="@string/prefs_message_list_group_by_date" android:key="prefMessageListGroupByDate" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/prefs_message_list_group_by_date_sticky" android:key="prefMessageListGroupByDateSticky" android:dependency="prefMessageListGroupByDate" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/prefs_message_list_attachment_names" android:key="prefMessageListAttachmentNames" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/prefs_message_list_category_names" android:key="prefMessageListCategoryNames" android:defaultValue="true" />
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_message_list_preview_lines" android:key="prefMessageListPreviewLines" android:defaultValue="1" app:entryList="@array/prefs_message_list_preview_lines_entry_list" app:valueList="@array/prefs_message_list_preview_lines_value_list" />
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_message_list_varying_backgrounds" android:key="prefMessageListVaryingBackgrounds" android:defaultValue="0" app:entryList="@array/prefs_message_list_varying_backgrounds_entry_list" app:valueList="@array/prefs_message_list_varying_backgrounds_value_list" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_message_list_smart_sort">
+        <SwitchPreference android:title="@string/prefs_message_list_smart_sort_title" android:key="prefMessageListSmartSort" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_message_list_swiping">
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_message_list_swiping_left_1" android:key="prefSwipeLeft1" android:defaultValue="11" app:entryList="@array/prefs_message_list_swiping_entry_list" app:valueList="@array/prefs_message_list_swiping_value_list" />
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_message_list_swiping_left_2" android:key="prefSwipeLeft2" android:defaultValue="9" app:entryList="@array/prefs_message_list_swiping_entry_list" app:valueList="@array/prefs_message_list_swiping_value_list" />
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_message_list_swiping_left_3" android:key="prefSwipeLeft3" android:defaultValue="7" app:entryList="@array/prefs_message_list_swiping_entry_list" app:valueList="@array/prefs_message_list_swiping_value_list" />
+        <org.kman.email2.prefs.MessageListSwipeSamplePreference android:persistent="false" android:key="prefsSwipeLeftSample" />
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_message_list_swiping_right_1" android:key="prefSwipeRight1" android:defaultValue="10" app:entryList="@array/prefs_message_list_swiping_entry_list" app:valueList="@array/prefs_message_list_swiping_value_list" />
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_message_list_swiping_right_2" android:key="prefSwipeRight2" android:defaultValue="1" app:entryList="@array/prefs_message_list_swiping_entry_list" app:valueList="@array/prefs_message_list_swiping_value_list" />
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_message_list_swiping_right_3" android:key="prefSwipeRight3" android:defaultValue="5" app:entryList="@array/prefs_message_list_swiping_entry_list" app:valueList="@array/prefs_message_list_swiping_value_list" />
+        <org.kman.email2.prefs.MessageListSwipeSamplePreference android:persistent="false" android:key="prefsSwipeRightSample" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_message_list_customize" android:key="prefUiMessageListCustomize">
+        <org.kman.email2.prefs.MessageListThemePreference android:persistent="false" android:key="prefUiMessageListTheme" />
+    </PreferenceCategory>
+</PreferenceScreen>

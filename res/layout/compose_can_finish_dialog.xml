@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MaterialDialogTopBottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/compose_can_finish_keep_editing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/compose_can_finish_keep_editing" android:drawableStart="@drawable/ic_compose_can_finish_keep_editing_24dp_accent" style="@style/ComposeConfirmButton" />
+        <TextView android:id="@id/compose_can_finish_save_finish" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/compose_can_finish_save_finish" android:drawableStart="@drawable/ic_compose_can_finish_save_finish_24dp_accent" style="@style/ComposeConfirmButton" />
+        <TextView android:id="@id/compose_can_finish_discard_changes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/compose_can_finish_discard_changes" android:drawableStart="@drawable/ic_compose_can_finish_discard_changes_24dp_accent" style="@style/ComposeConfirmButton" />
+    </LinearLayout>
+</ScrollView>

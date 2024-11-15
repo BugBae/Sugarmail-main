@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MaterialDialog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:id="@id/purchase_prompt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:theme="@android:style/ThemeOverlay.Material.Dark" android:id="@id/purchase_prompt_action_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:minHeight="72.0dip" android:drawablePadding="8.0dip" android:backgroundTint="?android:colorAccent" />
+    <Button android:theme="@android:style/ThemeOverlay.Material.Dark" android:id="@id/purchase_prompt_action_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:minHeight="72.0dip" android:drawablePadding="8.0dip" android:backgroundTint="?android:colorAccent" />
+    <RelativeLayout android:id="@id/purchase_prompt_close_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <TextView android:textColor="@color/action_accent_color" android:id="@id/purchase_prompt_close" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/close" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/ActionTextView.Accent" />
+        <ProgressBar android:id="@id/purchase_prompt_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/purchase_prompt_close" style="?android:progressBarStyleHorizontal" />
+    </RelativeLayout>
+</LinearLayout>

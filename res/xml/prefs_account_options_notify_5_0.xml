@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/prefs_notify_enable" android:key="prefNotifyEnable" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/prefs_custom_notifications" android:key="prefNotifyCustom" android:dependency="prefNotifyEnable" android:defaultValue="false" />
+    <org.kman.prefsx.RingtonePreferenceX android:title="@string/prefs_notify_sound" android:key="prefNotifySound" android:dependency="prefNotifyCustom" android:ringtoneType="notification" />
+    <CheckBoxPreference android:title="@string/prefs_notify_vibration" android:key="prefNotifyVibration" android:dependency="prefNotifyCustom" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/prefs_notify_led" android:key="prefNotifyLed" android:dependency="prefNotifyCustom" android:defaultValue="true" />
+    <org.kman.email2.color.ColorPickerPreference android:title="@string/prefs_notify_led_color" android:key="prefNotifyLedColor" android:dependency="prefNotifyLed" android:defaultValue="\#00ff00" />
+</PreferenceScreen>

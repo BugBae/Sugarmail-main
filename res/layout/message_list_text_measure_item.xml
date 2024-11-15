@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/AppTheme" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="?messageListTextColorSecondary" android:ellipsize="end" android:id="@id/message_list_item_when" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/message_list_when_max_width" android:includeFontPadding="false" />
+    <TextView android:textSize="16.0sp" android:textColor="?messageListTextColorPrimary" android:ellipsize="end" android:gravity="start" android:id="@id/message_list_item_sender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:textAlignment="viewStart" />
+    <TextView android:textSize="14.0sp" android:textColor="?messageListTextColorPrimary" android:ellipsize="end" android:gravity="start" android:id="@id/message_list_item_subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:textAlignment="textStart" />
+    <TextView android:textSize="14.0sp" android:textColor="?messageListTextColorSecondary" android:ellipsize="end" android:gravity="start" android:id="@id/message_list_item_preview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:fontFamily="@string/typeface_light" android:textAlignment="textStart" />
+</LinearLayout>

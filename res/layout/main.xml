@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.FixedDrawerLayout android:id="@id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/main_app_bar" />
+    <view android:layout_gravity="start" android:id="@id/nav_sidebar" android:background="?android:windowBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="320.0dip" class="org.kman.email2.view.NavSidebar" />
+</androidx.drawerlayout.widget.FixedDrawerLayout>

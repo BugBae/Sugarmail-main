@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MaterialDialog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <AutoCompleteTextView android:id="@id/bundle_edit_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/prefs_bundle_value_add" android:inputType="textEmailAddress" />
+    <RadioGroup android:id="@id/bundle_edit_radio" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/bundle_kind_domain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/prefs_bundle_kind_domain" />
+        <RadioButton android:id="@id/bundle_kind_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/prefs_bundle_kind_email" />
+    </RadioGroup>
+</LinearLayout>

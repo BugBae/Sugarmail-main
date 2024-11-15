@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prefs_notify_action_entry_list">
+        <item>@string/prefs_notify_action_none</item>
+        <item>@string/prefs_notify_action_delete</item>
+        <item>@string/prefs_notify_action_mark_read</item>
+        <item>@string/prefs_notify_action_reply</item>
+        <item>@string/prefs_notify_action_snooze</item>
+        <item>@string/prefs_notify_action_archive</item>
+        <item>@string/prefs_notify_action_spam</item>
+        <item>@string/prefs_notify_action_block</item>
+    </string-array>
+    <integer-array name="prefs_notify_action_value_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>7</item>
+        <item>5</item>
+        <item>6</item>
+    </integer-array>
+</resources>

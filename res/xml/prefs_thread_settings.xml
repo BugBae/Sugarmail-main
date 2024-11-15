@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/prefs_thread_enable" android:key="prefThreadEnable" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/prefs_thread_group_sender" android:key="prefThreadSender" android:dependency="prefThreadEnable" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/prefs_thread_group_break_by_subject" android:key="prefThreadBreakBySubject" android:dependency="prefThreadSender" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/prefs_thread_group_bundle" android:key="prefThreadBundleEnable" android:dependency="prefThreadEnable" android:defaultValue="true" />
+    <Preference android:persistent="false" android:title="@string/prefs_thread_bundle_list" android:key="prefThreadBundleList" android:dependency="prefThreadBundleEnable" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/prefs_thread_across_folders" android:key="prefThreadAcrossFolders" android:dependency="prefThreadEnable" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/prefs_thread_promote_same_folder" android:key="prefThreadPromoteSameFolder" android:dependency="prefThreadAcrossFolders" android:defaultValue="false" />
+    <Preference android:title="@string/prefs_thread_recompute" android:key="prefThreadRecompute" android:dependency="prefThreadEnable" />
+</PreferenceScreen>

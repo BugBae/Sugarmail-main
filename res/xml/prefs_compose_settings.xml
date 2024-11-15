@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:title="@string/prefs_compose_undoable_send" android:key="prefComposeUndoSend" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/prefs_compose_start_formatted" android:key="prefComposeStartFormatted" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/prefs_compose_internal_browser" android:key="prefComposeInternalBrowser" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/prefs_compose_auto_save" android:key="prefComposeAutoSave" android:defaultValue="true" />
+    <org.kman.email2.prefs.DefaultComposeAccountPreference android:title="@string/prefs_compose_default_account" android:key="prefComposeDefaultAccountId" android:defaultValue="0" />
+    <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_compose_quote_format" android:key="prefComposeQuoteFormat" android:defaultValue="0" app:entryList="@array/prefs_compose_quote_format_entry_list" app:valueList="@array/prefs_compose_quote_format_value_list" />
+    <org.kman.prefsx.IntegerMaskPreference android:title="@string/prefs_compose_quote_features" android:key="prefComposeQuoteFeatures" android:defaultValue="1" app:entryList="@array/prefs_compose_quote_features_entry_list" app:valueList="@array/prefs_compose_quote_features_value_list" />
+    <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_compose_resize_photos" android:key="prefComposeResizePhotos" android:defaultValue="2048" app:entryList="@array/prefs_compose_resize_photos_entry_list" app:valueList="@array/prefs_compose_resize_photos_value_list" />
+    <Preference android:persistent="false" android:title="@string/prefs_compose_snippets" android:key="prefComposeSnippets" />
+</PreferenceScreen>

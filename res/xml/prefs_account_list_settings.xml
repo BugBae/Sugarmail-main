@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/prefs_title_general">
+        <SwitchPreference android:title="@string/prefs_account_list_enable" android:key="prefAccountList" android:defaultValue="false" />
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_account_list_expand" android:key="prefAccountListExpand" android:dependency="prefAccountList" android:defaultValue="1" app:entryList="@array/prefs_account_list_expand_entry_list" app:valueList="@array/prefs_account_list_expand_value_list" />
+        <CheckBoxPreference android:title="@string/prefs_account_list_click" android:key="prefAccountListClick" android:dependency="prefAccountList" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_message_list_swiping">
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_account_list_swiping_left_1" android:key="prefAccountListSwipeLeft1" android:defaultValue="20" app:entryList="@array/prefs_account_list_swiping_entry_list" app:valueList="@array/prefs_account_list_swiping_value_list" />
+        <org.kman.email2.prefs.AccountListSwipeSamplePreference android:persistent="false" android:key="prefsAccountListSwipeLeftSample" />
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_account_list_swiping_right_1" android:key="prefAccountListSwipeRight1" android:defaultValue="21" app:entryList="@array/prefs_account_list_swiping_entry_list" app:valueList="@array/prefs_account_list_swiping_value_list" />
+        <org.kman.email2.prefs.AccountListSwipeSamplePreference android:persistent="false" android:key="prefsAccountListSwipeRightSample" />
+    </PreferenceCategory>
+</PreferenceScreen>

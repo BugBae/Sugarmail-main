@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:theme="?contactPickerBottomBarTheme" android:id="@id/contact_picker_bar" android:background="?android:colorAccent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="8.0dip" android:outlineProvider="bounds">
+        <ImageView android:id="@id/contact_picker_accept" android:background="?android:selectableItemBackground" android:layout_width="64.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_close_24dp" android:scaleType="center" android:layout_centerVertical="true" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/contact_picker_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:layout_centerVertical="true" android:textAllCaps="true" android:fontFamily="@string/typeface_medium" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/contact_picker_accept" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <SearchView android:id="@id/contact_picker_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentTop="true" android:iconifiedByDefault="false" android:layout_marginStart="12.0dip" android:layout_marginEnd="16.0dip" />
+    <view android:id="@id/contact_picker_pager_indicator" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_below="@id/contact_picker_search" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" class="org.kman.email2.contactpicker.ContactPagerIndicator" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/contact_picker_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/contact_picker_bar" android:layout_below="@id/contact_picker_pager_indicator">
+        <FrameLayout android:id="@id/contact_picker_contact_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <view android:id="@id/contact_picker_contact_list" android:layout_width="fill_parent" android:layout_height="fill_parent" class="org.kman.email2.contactpicker.ContactPickerListView" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/contact_picker_group_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <view android:id="@id/contact_picker_group_list" android:layout_width="fill_parent" android:layout_height="fill_parent" class="org.kman.email2.contactpicker.ContactPickerListView" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/contact_picker_recent_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <view android:id="@id/contact_picker_recent_list" android:layout_width="fill_parent" android:layout_height="fill_parent" class="org.kman.email2.contactpicker.ContactPickerListView" />
+        </FrameLayout>
+    </androidx.viewpager.widget.ViewPager>
+</RelativeLayout>

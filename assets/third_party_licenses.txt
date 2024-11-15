@@ -1,0 +1,66 @@
+Unified Email
+Copyright (c) 2012 Google Inc.
+Apache License 2.0
+
+K-9 Mail
+Copyright (c) The K-9 Dog Walkers
+Apache License 2.0
+
+Android Support Library
+Copyright (c) Google Inc.
+Apache License 2.0
+
+AndroidX
+Copyright (c) Google Inc.
+Apache License 2.0
+
+Subsampling Scale Image View
+Copyright (c) 2018 David Morrissey
+Apache License 2.0
+
+ColorPicker
+Copyright (c) 2018 Hong Duan
+Apache License 2.0
+
+Icons from http://icons8.com
+Icons from http://www.freeiconspng.com
+Icons made by Pixel perfect from www.flaticon.com
+Icons made by Freepik from www.flaticon.com
+Icons made by Pixel Buddha from www.flaticon.com
+Icons made by Roundicons from www.flaticon.com
+Icons from http://icons.yootheme.com/
+Icons from http://materialdesignicons.com
+Icons from http://iconbug.com
+Icons from http://uxwing.com
+
+AppAuth for Android
+Copyright (c) 2016 The AppAuth for Android Authors
+Apache License 2.0
+
+java-sha256
+Copyright (c) 2017 Fabian Meyer
+MIT License
+
+SHA1.java
+Chuck McManis, public domain
+
+Greenrobot Essentials
+Copyright (c) 2014 Markus Junginger, greenrobot (http://greenrobot.de)
+Apache License 2.0
+
+TextLayoutBuilder
+Copyright (c) Facebook
+Apache License 2.0
+
+Material Tap Target Prompt
+Copyright (c) 2016-2018 Samuel Wall
+Apache License 2.0
+
+Apache Commons Codec
+Apache License 2.0
+
+Apache HttpCore
+Apache License 2.0
+
+Apache HttpClient
+Apache License 2.0

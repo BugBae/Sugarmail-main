@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/prefs_notify_enable" android:key="prefNotifyEnable" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/prefs_custom_notifications" android:key="prefNotifyCustom" android:dependency="prefNotifyEnable" android:defaultValue="false" />
+    <Preference android:title="@string/prefs_notify_settings" android:key="prefNotifySettings" android:dependency="prefNotifyCustom" />
+</PreferenceScreen>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/prefs_title_general">
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_ui_theme" android:key="prefUiTheme" android:defaultValue="@integer/prefs_ui_theme_default" app:entryList="@array/prefs_ui_theme_entry_list" app:valueList="@array/prefs_ui_theme_value_list" />
+        <org.kman.email2.color.ColorPickerPreference android:title="@string/prefs_ui_theme_accent_color" android:key="prefUiAccentColor" android:defaultValue="0" />
+        <org.kman.email2.color.ColorPickerPreference android:title="@string/prefs_ui_theme_button_color" android:key="prefUiFabColor" android:defaultValue="0" />
+        <CheckBoxPreference android:title="@string/prefs_ui_pure_black" android:key="prefUiPureBlack" android:defaultValue="false" />
+        <org.kman.email2.prefs.LocalePreference android:persistent="false" android:title="@string/prefs_ui_locale_title" android:key="prefUiLocale" />
+        <org.kman.email2.prefs.InitialStatePreference android:title="@string/prefs_ui_initial_state" android:key="prefUiInitialState" />
+        <SwitchPreference android:title="@string/prefs_ui_use_background_image" android:key="prefUiUseBackgroundImage" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/prefs_ui_compact_layouts" android:key="prefUiCompactLayouts" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/prefs_ui_replace_folder_names" android:key="prefUiReplaceFolderNames" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/prefs_ui_full_folder_names" android:key="prefUiFullFolderNames" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/prefs_ui_total_counts" android:key="prefUiTotalCounts" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/prefs_ui_thin_fonts" android:key="prefUiThinFonts" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/prefs_ui_scroll_panel" android:key="prefUiScrollPanel" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_ui_dark_theme_at_night">
+        <org.kman.prefsx.TimePreference android:title="@string/prefs_start_time" android:key="prefUiDarkAtNightStart" />
+        <org.kman.prefsx.TimePreference android:title="@string/prefs_end_time" android:key="prefUiDarkAtNightEnd" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/media_entry_root" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/media_entry_image" android:layout_width="48.0dip" android:layout_height="48.0dip" android:scaleType="center" android:contentDescription="@string/access_directory" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/media_entry_image">
+        <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:ellipsize="middle" android:id="@id/media_entry_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?android:textColorSecondary" android:ellipsize="middle" android:id="@id/media_entry_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@string/typeface_light" />
+    </LinearLayout>
+    <org.kman.email2.view.CheckableImageView android:id="@id/media_browser_entry_select" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="4.0dip" android:checked="true" android:src="@drawable/media_browser_photo_select" android:layout_alignTop="@id/media_entry_image" android:contentDescription="@string/access_select" android:layout_marginEnd="4.0dip" android:layout_alignEnd="@id/media_entry_image" />
+</RelativeLayout>

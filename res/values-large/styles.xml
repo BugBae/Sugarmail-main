@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppThemeDialogWhenLarge" parent="@style/Theme.AppCompat.Light.Dialog.MinWidth">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppThemeDialogWhenLarge.NoActionBar" parent="@style/AppThemeDialogWhenLarge">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppThemeDialogWhenLargeColor" parent="@style/Theme.AppCompat.Light.Dialog.MinWidth">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:colorPrimary">@color/colorColorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorColorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorColorAccent</item>
+    </style>
+    <style name="AppThemeDialogWhenLargeColor.NoActionBar" parent="@style/AppThemeDialogWhenLargeColor">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppThemeDialogWhenLargeDark" parent="@style/Theme.AppCompat.Dialog.MinWidth">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:colorPrimary">@color/colorDarkPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorDarkPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorDarkAccent</item>
+    </style>
+    <style name="AppThemeDialogWhenLargeDark.NoActionBar" parent="@style/AppThemeDialogWhenLargeDark">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Base.Theme.AppCompat.DialogWhenLarge" parent="@style/Base.Theme.AppCompat.Dialog.FixedSize" />
+    <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="@style/Base.Theme.AppCompat.Light.Dialog.FixedSize" />
+    <style name="Base.Theme.Material3.Dark.DialogWhenLarge" parent="@style/Base.Theme.Material3.Dark.Dialog.FixedSize" />
+    <style name="Base.Theme.Material3.Light.DialogWhenLarge" parent="@style/Base.Theme.Material3.Light.Dialog.FixedSize" />
+    <style name="Base.Theme.MaterialComponents.DialogWhenLarge" parent="@style/Base.Theme.MaterialComponents.Dialog.FixedSize" />
+    <style name="Base.Theme.MaterialComponents.Light.DialogWhenLarge" parent="@style/Base.Theme.MaterialComponents.Light.Dialog.FixedSize" />
+</resources>

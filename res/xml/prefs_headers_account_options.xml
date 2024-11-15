@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:icon="@drawable/ic_account_settings_folder_settings" android:title="@string/prefs_folders" android:fragment="org.kman.email2.prefs.AccountOptionsFoldersFragment" />
+    <header android:icon="@drawable/ic_account_settings_notifications" android:title="@string/prefs_notify_header_title" android:fragment="org.kman.email2.prefs.AccountOptionsNotifyFragment" />
+    <header android:icon="@drawable/ic_account_settings_composing_and_sending" android:title="@string/prefs_compose_header_title" android:fragment="org.kman.email2.prefs.AccountOptionsComposeFragment" />
+    <header android:icon="@drawable/ic_account_settings_options" android:title="@string/prefs_account_options_title" android:fragment="org.kman.email2.prefs.AccountOptionsOptionsFragment" />
+    <header android:icon="@drawable/ic_account_settings_preload_attachments" android:title="@string/prefs_preload_settings" android:fragment="org.kman.email2.prefs.AccountOptionsPreloadFragment" />
+</preference-headers>

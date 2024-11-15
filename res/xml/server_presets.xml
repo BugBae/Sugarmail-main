@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<server_presets>
+    <preset domain="yandex.(com|ru|kz|ua|tr)" mx="mx.yandex.(com|ru|kz|ua|tr)">
+        <incoming>
+            <host>imap.yandex.ru</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.yandex.ru</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="mail.ru|inbox.ru" mx="mxs.mail.ru">
+        <message>Please use an application specific password which can be created on Mail.ru web site</message>
+        <message language="ru">Пожалуйста используйте пароль для приложения, его можно создать на веб сайте Mail.ru</message>
+        <incoming>
+            <host>imap.mail.ru</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.mail.ru</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="rambler.ru|lenta.ru">
+        <incoming>
+            <host>mail.rambler.ru</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>mail.rambler.ru</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="fastmail.com" mx="in.+.messagingengine.com">
+        <message>Please use an application specific password which can be created on Fastmail web site</message>
+        <message language="ru">Пожалуйста используйте пароль для приложения, его можно создать на веб сайте Fastmail</message>
+        <incoming>
+            <host>imap.fastmail.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.fastmail.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="gmail.com" mx="(alt[0-9].gmail|gmail)-smtp-in.l.google.com">
+        <incoming>
+            <host>imap.gmail.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.gmail.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="googlemail.com">
+        <incoming>
+            <host>imap.googlemail.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.googlemail.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="yahoo.com|ymail.net|yahoo.de|rocketmail.com" mx="mt.+.yahoodns.net">
+        <message>Please use an application specific password which can be created on Yahoo web site</message>
+        <incoming>
+            <host>imap.mail.yahoo.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.mail.yahoo.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="hotmail.com|live.com|outlook.com|outlook.sk|hotmail.co.[a-z]+|live.co.[a-z]+|hotmail.jp" mx="hotmail-com.olc.protection.outlook.com.">
+        <incoming>
+            <host>imap-mail.outlook.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp-mail.outlook.com</host>
+            <encryption>tls</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="zoho.com" mx="smtp.+.zoho.com">
+        <incoming>
+            <host>imap.zoho.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.zoho.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain=".+.onmicrosoft.com" mx=".+.mail.protection.outlook.com">
+        <incoming>
+            <host>outlook.office365.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.office365.com</host>
+            <encryption>tls</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="free.fr">
+        <incoming>
+            <host>imap.free.fr</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.free.fr</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="gmx.net|gmx.de|gmx.at|gmx.ch|gmx.eu">
+        <incoming>
+            <host>imap.gmx.net</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>mail.gmx.net</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="gmx.com">
+        <incoming>
+            <host>imap.gmx.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>mail.gmx.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="mailbox.org">
+        <incoming>
+            <host>imap.mailbox.org</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.mailbox.org</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="freenet.de">
+        <incoming>
+            <host>mx.freenet.de</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>mx.freenet.de</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="t-online.de">
+        <incoming>
+            <host>secureimap.t-online.de</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>securesmtp.t-online.de</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="web.de">
+        <incoming>
+            <host>imap.web.de</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.web.de</host>
+            <encryption>tls</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="posteo.de|posteo.net">
+        <incoming>
+            <host>posteo.de</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>posteo.de</host>
+            <encryption>tls</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="comcast.net">
+        <incoming>
+            <host>imap.comcast.net</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.comcast.net</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="zoho.com">
+        <incoming>
+            <host>imap.zoho.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.zoho.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="mail.com|email.com" mx="[a-z0-9]+.mail.com">
+        <incoming>
+            <host>imap.mail.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.mail.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="mac.com">
+        <message>Please use an application specific password which can be created on iCloud web site</message>
+        <message language="ru">Пожалуйста используйте пароль для приложения, его можно создать на веб сайте iCloud</message>
+        <incoming>
+            <host>imap.mail.me.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.mail.me.com</host>
+            <encryption>tls</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="me.com">
+        <message>Please use an application specific password which can be created on iCloud web site</message>
+        <message language="ru">Пожалуйста используйте пароль для приложения, его можно создать на веб сайте iCloud</message>
+        <incoming>
+            <host>imap.mail.me.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.mail.me.com</host>
+            <encryption>tls</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="icloud.com">
+        <message>Please use an application specific password which can be created on iCloud web site</message>
+        <message language="ru">Пожалуйста используйте пароль для приложения, его можно создать на веб сайте iCloud</message>
+        <incoming>
+            <host>imap.mail.me.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.mail.me.com</host>
+            <encryption>tls</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="aol.co.uk">
+        <incoming>
+            <host>imap.uk.aol.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.uk.aol.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="virginmedia.com|virgin.net|blueyonder.co.uk|ntlworld.com">
+        <incoming>
+            <host>imap.virginmedia.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.virginmedia.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="otenet.gr">
+        <incoming>
+            <host>imap.otenet.gr</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>mailgate.otenet.gr</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="poste.it">
+        <incoming>
+            <host>relay.poste.it</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>relay.poste.it</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="vodafone.it">
+        <incoming>
+            <host>imap.vodafone.it</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.vodafone.it</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="kolabnow.com" mx="[a-z0-9]+.kolabnow.com">
+        <incoming>
+            <host>imap.kolabnow.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.kolabnow.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="naver.com">
+        <incoming>
+            <host>imap.naver.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.naver.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="hanmail.net|daum.net">
+        <incoming>
+            <host>imap.hanmail.net</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.hanmail.net</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="home.nl|zigoo.nl|ziggomail.com">
+        <incoming>
+            <host>imap.ziggo.nl</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.ziggo.nl</host>
+            <encryption>tls</encryption>
+        </outgoing>
+    </preset>
+    <preset domain="on.net">
+        <incoming>
+            <host>mail.internode.on.net</host>
+            <encryption>ssl</encryption>
+            <login>user</login>
+        </incoming>
+        <outgoing>
+            <host>mail.internode.on.net</host>
+            <encryption>tls</encryption>
+            <login>user</login>
+        </outgoing>
+    </preset>
+    <preset domain="aol.com">
+        <message>Please use an application specific password which can be created on AOL web site</message>
+        <incoming>
+            <host>imap.aol.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>smtp.aol.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+    <preset domain=".+.onmicrosoft.com" mx=".+.mail.protection.outlook.com" type="ews">
+        <incoming>
+            <host>outlook.office365.com</host>
+            <encryption>ssl</encryption>
+        </incoming>
+        <outgoing>
+            <host>outlook.office365.com</host>
+            <encryption>ssl</encryption>
+        </outgoing>
+    </preset>
+</server_presets>

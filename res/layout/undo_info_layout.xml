@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/mat_deep_orange_700" android:id="@id/undo_info_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/undo_info_button" android:layout_centerVertical="true" android:textAllCaps="true" android:fontFamily="@string/typeface_medium" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="14.0dip" android:textColor="?android:textColorPrimary" android:id="@id/undo_info_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/undo_info_button" />
+</RelativeLayout>

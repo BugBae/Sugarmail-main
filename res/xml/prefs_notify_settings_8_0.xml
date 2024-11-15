@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:title="@string/prefs_notify_enable" android:key="prefNotifyEnable" android:defaultValue="true" />
+    <PreferenceCategory android:title="@string/prefs_notify_messages_section">
+        <Preference android:title="@string/prefs_notify_settings" android:key="prefNotifySettings" android:dependency="prefNotifyEnable" />
+        <SwitchPreference android:title="@string/prefs_notify_combined" android:key="prefNotifyCombined" android:dependency="prefNotifyEnable" android:defaultValue="false" />
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_notify_action_1" android:key="prefNotifyAction1" android:dependency="prefNotifyEnable" android:defaultValue="1" app:entryList="@array/prefs_notify_action_entry_list" app:valueList="@array/prefs_notify_action_value_list" />
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_notify_action_2" android:key="prefNotifyAction2" android:dependency="prefNotifyEnable" android:defaultValue="2" app:entryList="@array/prefs_notify_action_entry_list" app:valueList="@array/prefs_notify_action_value_list" />
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_notify_action_3" android:key="prefNotifyAction3" android:dependency="prefNotifyEnable" android:defaultValue="4" app:entryList="@array/prefs_notify_action_entry_list" app:valueList="@array/prefs_notify_action_value_list" />
+        <org.kman.email2.snooze.prefs.SnoozePlusHoursPreference android:title="@string/prefs_notify_action_snooze_value" android:key="prefNotifyActionSnooze" android:dependency="prefNotifyEnable" android:defaultValue="0x01_01_00_02_00" app:isAlwaysEnabled="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_notify_errors_section">
+        <Preference android:title="@string/prefs_error_notify_settings" android:key="prefErrorNotifySettings" android:dependency="prefNotifyEnable" />
+    </PreferenceCategory>
+</PreferenceScreen>

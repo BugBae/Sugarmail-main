@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContactsAccountType>
+    <EditSchema>
+        <DataKind kind="name" maxOccurs="1" supportsDisplayName="true" supportsMiddleName="true" supportsPhoneticFamilyName="true" supportsPhoneticGivenName="true" supportsPhoneticMiddleName="true" supportsPrefix="true" supportsSuffix="true" />
+        <DataKind kind="photo" maxOccurs="1" />
+        <DataKind kind="phone">
+            <Type maxOccurs="1" type="mobile" />
+            <Type maxOccurs="2" type="home" />
+            <Type maxOccurs="2" type="work" />
+            <Type maxOccurs="1" type="fax_work" />
+            <Type maxOccurs="1" type="fax_home" />
+            <Type maxOccurs="1" type="other" />
+            <Type maxOccurs="1" type="callback" />
+            <Type maxOccurs="1" type="company_main" />
+            <Type maxOccurs="1" type="main" />
+            <Type maxOccurs="1" type="other_fax" />
+            <Type maxOccurs="1" type="work_mobile" />
+            <Type maxOccurs="1" type="work_pager" />
+            <Type maxOccurs="1" type="assistant" />
+        </DataKind>
+        <DataKind kind="email" maxOccurs="3">
+            <Type type="home" />
+            <Type type="work" />
+            <Type type="other" />
+            <Type type="mobile" />
+            <Type type="custom" />
+        </DataKind>
+        <DataKind kind="im" maxOccurs="3">
+            <Type type="aim" />
+            <Type type="msn" />
+            <Type type="yahoo" />
+            <Type type="skype" />
+            <Type type="qq" />
+            <Type type="google_talk" />
+            <Type type="icq" />
+            <Type type="jabber" />
+            <Type type="custom" />
+        </DataKind>
+        <DataKind kind="postal" needsStructured="true">
+            <Type type="home" />
+            <Type type="work" />
+            <Type type="other" />
+        </DataKind>
+        <DataKind kind="organization" maxOccurs="1" />
+        <DataKind kind="website" maxOccurs="1" />
+        <DataKind kind="note" maxOccurs="1" />
+    </EditSchema>
+</ContactsAccountType>

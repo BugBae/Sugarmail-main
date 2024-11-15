@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:inset="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <layer-list>
+        <item>
+            <selector android:enterFadeDuration="200" android:exitFadeDuration="200">
+                <item android:state_checked="true">
+                    <shape>
+                        <corners android:radius="8.0dip" />
+                        <solid android:color="?messageListSelectionColor" />
+                    </shape>
+                </item>
+                <item android:state_activated="true">
+                    <shape>
+                        <corners android:radius="8.0dip" />
+                        <solid android:color="?selectActivatedColor" />
+                    </shape>
+                </item>
+                <item app:message_list_state_unread="true">
+                    <shape>
+                        <corners android:radius="8.0dip" />
+                        <solid android:color="?messageListSecondaryBackgroundColor" />
+                    </shape>
+                </item>
+            </selector>
+        </item>
+        <item>
+            <ripple android:color="?colorControlHighlight">
+                <item android:id="@android:id/mask">
+                    <shape>
+                        <corners android:radius="8.0dip" />
+                        <solid android:color="@android:color/white" />
+                    </shape>
+                </item>
+            </ripple>
+        </item>
+    </layer-list>
+</inset>

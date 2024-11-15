@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/no_accounts_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/colorError" android:id="@id/app_requires_services" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="280.0dip" />
+    <LinearLayout android:theme="@style/AppThemeOverlay.DarkButtonPanel" android:orientation="vertical" android:id="@id/add_account_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/add_account_button" android:layout_width="280.0dip" android:layout_height="wrap_content" android:text="@string/action_add_account" />
+        <Button android:id="@id/about_button" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/prefs_about_header_title" />
+    </LinearLayout>
+</FrameLayout>

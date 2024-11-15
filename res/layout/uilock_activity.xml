@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/uilock_content" android:background="?windowColorSecondary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.kman.email2.ui.lock.LockGroupLayout android:layout_gravity="center" android:id="@id/uilock_group" android:background="@drawable/ui_lock_panel_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="8.0dip" android:outlineProvider="background">
+        <TextView android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/uilock_title" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:text="@string/uilock_enter_pin_code_check" android:lines="1" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" />
+        <org.kman.email2.ui.lock.LockInputView android:id="@id/uilock_input" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <org.kman.email2.ui.lock.LockKeyboardView android:id="@id/uilock_keyboard" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </org.kman.email2.ui.lock.LockGroupLayout>
+</FrameLayout>

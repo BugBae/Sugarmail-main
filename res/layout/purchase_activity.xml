@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:id="@id/purchase_manage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/purchase_play_manage" android:layout_alignParentBottom="true" />
+    <Button android:textColor="#ffffffff" android:id="@id/purchase_cancel" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/purchase_cancel" android:layout_above="@id/purchase_manage" android:layout_centerHorizontal="true" android:backgroundTint="@color/mat_light_blue_500" />
+    <Button android:textColor="@color/purchase_action" android:id="@id/purchase_action" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/purchase_action" android:layout_above="@id/purchase_cancel" android:layout_centerHorizontal="true" android:backgroundTint="@color/mat_green_500" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/purchase_image" android:layout_width="96.0dip" android:layout_height="96.0dip" android:src="@drawable/ic_purchase" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_above="@id/purchase_action" android:layout_below="@id/purchase_image">
+        <LinearLayout android:orientation="vertical" android:id="@id/purchase_block_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/purchase_progress_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="?android:textColorSecondary" android:id="@id/purchase_progress_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ProgressBar android:id="@id/purchase_progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:indeterminate="true" style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/purchase_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:id="@id/purchase_error_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/purchase_result_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:gravity="center_horizontal" android:id="@id/purchase_result_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@id/purchase_block_wrapper" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/purchase_block_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@android:style/TextAppearance.Material.Title" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/purchase_title" />
+                <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/purchase_subtitle" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center" android:id="@id/silly_progress_background">
+        <shape android:tint="?android:colorControlNormal" android:shape="rectangle">
+            <corners android:radius="@dimen/silly_progress_bar_corner_radius" />
+            <size android:height="@dimen/silly_progress_bar_height" />
+            <solid android:color="#80ffffff" />
+        </shape>
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@id/silly_progress_bar">
+        <scale android:scaleWidth="100%">
+            <shape android:tint="?colorControlActivated" android:shape="rectangle">
+                <corners android:radius="@dimen/silly_progress_bar_corner_radius" />
+                <size android:height="@dimen/silly_progress_bar_height" />
+                <solid android:color="@android:color/white" />
+            </shape>
+        </scale>
+    </item>
+</layer-list>

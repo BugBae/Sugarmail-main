@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.kman.email2.view.MessageViewOverlay android:id="@id/message_view_text_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/message_view_header" />
+    </org.kman.email2.view.MessageViewOverlay>
+    <org.kman.email2.view.MessageViewScrollIndicators android:id="@id/message_view_scroll_indicators" android:scrollbars="horizontal|vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/message_view_print_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

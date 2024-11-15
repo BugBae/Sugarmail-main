@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.kman.email2.snooze.prefs.SnoozePlusHoursPreference android:title="@string/choose_time_later" android:key="prefSnoozeValue1" android:defaultValue="0x01_01_00_02_00" />
+    <org.kman.email2.snooze.prefs.SnoozeTimePreference android:title="@string/choose_time_today_evening" android:key="prefSnoozeValue2" android:defaultValue="0x01_02_00_14_00" />
+    <org.kman.email2.snooze.prefs.SnoozeTimePreference android:title="@string/choose_time_tomorrow_morning" android:key="prefSnoozeValue3" android:defaultValue="0x01_03_00_0A_00" />
+    <org.kman.email2.snooze.prefs.SnoozeTimePreference android:title="@string/choose_time_tomorrow_evening" android:key="prefSnoozeValue4" android:defaultValue="0x01_04_00_14_00" />
+    <org.kman.email2.snooze.prefs.SnoozeWeekDayTimePreference android:title="@string/choose_time_this_weekend" android:key="prefSnoozeValue5" android:defaultValue="0x01_05_07_0A_00" />
+    <org.kman.email2.snooze.prefs.SnoozeWeekDayTimePreference android:title="@string/choose_time_next_week" android:key="prefSnoozeValue6" android:defaultValue="0x01_06_02_0A_00" />
+</PreferenceScreen>

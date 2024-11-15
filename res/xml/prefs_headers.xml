@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:icon="@drawable/ic_plus_thick_24dp_white" android:title="@string/action_add_account">
+        <intent android:targetPackage="org.kman.email2" android:targetClass="org.kman.email2.setup.AccountTypeActivity" />
+    </header>
+    <header android:icon="@drawable/ic_settings_header_look_and_feel_white" android:title="@string/prefs_ui_header_title" android:fragment="org.kman.email2.prefs.UiSettingsFragment" />
+    <header android:icon="@drawable/ic_settings_header_side_panel_white" android:title="@string/prefs_nav_drawer_header_title" android:fragment="org.kman.email2.prefs.NavSidebarSettingsFragment" />
+    <header android:icon="@drawable/ic_settings_header_notifications_white" android:title="@string/prefs_notify_header_title" android:fragment="org.kman.email2.prefs.NotifySettingsFragment" />
+    <header android:icon="@drawable/ic_settings_header_conversation_grouping_white" android:title="@string/prefs_thread_header_title" android:fragment="org.kman.email2.prefs.ThreadSettingsFragment" />
+    <header android:icon="@drawable/ic_settings_header_account_list_view_white" android:title="@string/prefs_account_list_header_title" android:fragment="org.kman.email2.prefs.AccountListSettingsFragment" />
+    <header android:icon="@drawable/ic_settings_header_message_list_view_white" android:title="@string/prefs_message_list_header_title" android:fragment="org.kman.email2.prefs.MessageListSettingsFragment" />
+    <header android:icon="@drawable/ic_settings_header_message_view_white" android:title="@string/prefs_message_view_header_title" android:fragment="org.kman.email2.prefs.MessageViewSettingsFragment" />
+    <header android:icon="@drawable/ic_settings_header_composing_and_sending_white" android:title="@string/prefs_compose_header_title" android:fragment="org.kman.email2.prefs.ComposeSettingsFragment" />
+    <header android:icon="@drawable/ic_settings_header_snooze_white" android:title="@string/prefs_snooze_header_title" android:fragment="org.kman.email2.prefs.SnoozeSettingsFragment" />
+    <header android:icon="@drawable/ic_settings_header_blocked_white" android:title="@string/prefs_blocked_header_title" android:fragment="org.kman.email2.prefs.blocked.BlockedSettingsFragment" />
+    <header android:icon="@drawable/ic_settings_header_storage_white" android:title="@string/prefs_storage_header_title" android:fragment="org.kman.email2.prefs.StorageFragment" />
+    <header android:icon="@drawable/ic_settings_header_permissions_white" android:title="@string/prefs_permissions_header_title" android:fragment="org.kman.email2.prefs.PermissionsFragment" />
+    <header android:icon="@drawable/ic_settings_header_security_white" android:title="@string/prefs_security_header_title" android:fragment="org.kman.email2.prefs.SecurityFragment" />
+    <header android:icon="@drawable/ic_settings_header_backup_and_restore_white" android:title="@string/prefs_backup_header_title">
+        <intent android:targetPackage="org.kman.email2" android:targetClass="org.kman.email2.backup.BackupActivity" />
+    </header>
+    <header android:icon="@drawable/ic_settings_header_about_white" android:title="@string/prefs_about_header_title" android:fragment="org.kman.email2.prefs.AboutFragment" />
+</preference-headers>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title" android:ellipsize="end" android:id="@id/compose_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Subtitle" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/compose_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:drawablePadding="8.0dip" />
+    </LinearLayout>
+</FrameLayout>

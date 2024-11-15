@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:title="@string/prefs_preload_wifi" android:key="prefPreloadWifi" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/prefs_preload_3g" android:key="prefPreload3g" android:defaultValue="false" />
+    <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_preload_since" android:key="prefPreloadSince" android:defaultValue="14" app:entryList="@array/prefs_preload_since_entry_list" app:valueList="@array/prefs_preload_since_value_list" />
+</PreferenceScreen>

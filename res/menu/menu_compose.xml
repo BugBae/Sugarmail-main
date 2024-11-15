@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_attachment_24dp" android:id="@id/action_attach" android:title="@string/action_attach" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_send_24dp" android:id="@id/action_send_now" android:title="@string/action_send_now" app:showAsAction="ifRoom" />
+    <item android:id="@id/action_save" android:title="@string/action_save" />
+    <item android:id="@id/action_send_later" android:title="@string/action_send_later" />
+    <item android:id="@id/action_add_formatting" android:title="@string/action_add_formatting" />
+    <item android:id="@id/action_insert_contact" android:title="@string/action_insert_contact" />
+    <item android:id="@id/action_read_receipt" android:title="@string/compose_read_receipt" />
+    <item android:id="@id/action_delete_draft" android:title="@string/compose_delete_draft" />
+</menu>

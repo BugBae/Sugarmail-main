@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0dip" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:id="@id/custom_title_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/custom_title_count">
+        <TextView android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title" android:ellipsize="end" android:id="@id/custom_title_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:drawablePadding="8.0dip" />
+        <TextView android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Subtitle" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/custom_title_subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+</RelativeLayout>

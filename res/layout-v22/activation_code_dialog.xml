@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MaterialDialog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/activation_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/activation_code_hint" android:inputType="textVisiblePassword" android:importantForAutofill="no" />
+    <RelativeLayout android:id="@id/activation_checking_wrapper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/activation_checking_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="?android:progressBarStyle" />
+        <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:id="@id/activation_checking_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activation_code_checking" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_toEndOf="@id/activation_checking_progress" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:id="@id/activation_result_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

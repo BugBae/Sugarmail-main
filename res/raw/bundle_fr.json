@@ -1,0 +1,13 @@
+{
+  "bundles": [
+    {
+      "id": "shopping",
+      "domains": [
+        "leboncoin.fr",
+        "fnac.fr",
+        "fnac.com",
+        "darty.fr"
+      ]
+    }
+  ]
+}

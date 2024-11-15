@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<style>
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+    blockquote[type=cite], blockquote.gmail_quote {
+        padding: 0px 0px 0px 16px;
+        margin: 0px;
+        border-left: 1px solid silver;
+    }
+    a {
+    	text-decoration: none;
+    	color: $link_color$;
+    }
+    pre {
+		white-space: pre-wrap;
+		word-break: keep-all
+    }
+    #kman-wrapper-outer {
+        padding: $padding$px;
+        margin: 0px 0px 56px 0px;
+    }
+    #kman-overlay-top, #kman-wrapper-inner, #kman-overlay-bottom {
+        padding: 0px;
+        margin: 0px;
+    }
+    .kman-autolink {
+        word-wrap: break-all;
+    }
+    .kman_quoted {
+    }
+    .kman_quoted_hidden {
+    	display: none;
+    }
+    .kman_quoted_header {
+    	color: #0288D1;
+        font: 12px sans-serif-medium;
+        padding: 12px 0;
+        text-transform: uppercase;
+    }
+    table.munged {
+        width: auto !important;
+        table-layout: auto !important;
+    }
+    td.munged {
+        width: auto !important;
+        white-space: normal !important;
+    }
+    a.munged {
+		word-break: break-all;
+	}
+    .text_munged {
+        word-break: break-all;
+    }
+</style>
+
+<script type="text/javascript">
+const EMAIL2_MESSAGE_IS_DARK = $message_is_dark$
+const EMAIL2_WEBVIEW_IS_DARK = $webview_is_dark$
+const EMAIL2_AUTO_FIT = $is_autofit$
+const EMAIL2_FORM_MESSAGE = $form_message$
+const EMAIL2_SHOW_MESSAGE = $show_message$
+const EMAIL2_HIDE_MESSAGE = $hide_message$
+const ENABLE_MUNGE_IMAGES = true
+const ENABLE_MUNGE_ANCHORS = true
+const ENABLE_MUNGE_TABLES = true
+</script>
+
+<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=3.0">
+</head>
+<body>
+<div id="kman-overlay-top"></div>
+<div id="kman-wrapper-outer">
+	<div id="kman-wrapper-inner"></div>
+</div>
+<div id="kman-overlay-bottom"></div>
+</body>
+<script type="text/javascript" src="file:///android_asset/message_view.js"></script>
+</html>

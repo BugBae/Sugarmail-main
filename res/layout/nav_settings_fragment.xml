@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.kman.email2.dragdrop.DragDropLayout android:id="@id/nav_settings_dragdrop" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <org.kman.email2.dragdrop.DragDropRecyclerView android:id="@id/nav_settings_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </org.kman.email2.dragdrop.DragDropLayout>
+</FrameLayout>

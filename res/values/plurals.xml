@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="access_read_thread">
+        <item quantity="other">Conversation, %d messages</item>
+        <item quantity="one">Conversation, %d message</item>
+    </plurals>
+    <plurals name="access_unread_thread">
+        <item quantity="other">Unread conversation, %d messages</item>
+        <item quantity="one">Unread conversation, %d message</item>
+    </plurals>
+    <plurals name="contact_picker_select">
+        <item quantity="other">Select %d addresses</item>
+        <item quantity="one">Select %d address</item>
+    </plurals>
+    <plurals name="media_picker_select">
+        <item quantity="other">Select %d items</item>
+        <item quantity="one">Select %d item</item>
+    </plurals>
+    <plurals name="message_list_action_mode_message_count">
+        <item quantity="other">%d messages</item>
+        <item quantity="one">%d message</item>
+        <item quantity="few">%d messages</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="prefs_choose_time_later">
+        <item quantity="other">+%d hours</item>
+        <item quantity="one">+%d hour</item>
+    </plurals>
+    <plurals name="status_new_messages">
+        <item quantity="other">%d new messages</item>
+        <item quantity="one">%d new message</item>
+    </plurals>
+    <plurals name="trial_days_left">
+        <item quantity="other">%d days left</item>
+        <item quantity="one">%d day left</item>
+    </plurals>
+    <plurals name="trial_hours_left">
+        <item quantity="other">%d hours left</item>
+        <item quantity="one">%d hour left</item>
+    </plurals>
+    <plurals name="undo_action_delete_now">
+        <item quantity="other">Deleted %d messages</item>
+        <item quantity="one">Deleted %d message</item>
+        <item quantity="few">Deleted %d messages</item>
+    </plurals>
+    <plurals name="undo_action_move_to_folder">
+        <item quantity="other">Moved %1$d messages to %2$s</item>
+        <item quantity="one">Moved %1$d message to %2$s</item>
+        <item quantity="few">Moved %1$d messages to %2$s</item>
+    </plurals>
+</resources>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:textSize="16.0sp" android:textColorHint="?android:textColorHint" android:id="@id/compose_editor_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="64.0dip" android:minHeight="40.0dip" class="org.kman.email2.compose.ComposeOverlayTop"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

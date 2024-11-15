@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/prefsx_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+        <view android:id="@id/prefsx_fragment_headers" android:layout_width="fill_parent" android:layout_height="fill_parent" class="org.kman.prefsx.PreferenceActivityX$HeaderListView" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/prefsx_fragment_preferences" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="?appBarOverlay" android:id="@id/app_bar_layout" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="?popupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/main_content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <ViewStub android:layout_gravity="end|bottom|center" android:id="@id/shared_bogus_menu_stub" android:layout="@layout/shared_bogus_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" />
+    <org.kman.email2.view.MyFab android:layout_gravity="end|bottom|center" android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:src="@drawable/ic_menu_compose_24dp_white" android:contentDescription="@string/action_compose" app:layout_behavior="org.kman.email2.view.MyFab$Behavior" />
+    <view android:layout_gravity="bottom|center" android:id="@id/undo_panel_layout" android:background="@drawable/undo_info_background" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="48.0dip" android:elevation="8.0dip" android:outlineProvider="bounds" class="org.kman.email2.view.UndoPanelLayout" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/prefs_compose_save_sent" android:key="prefComposeSaveSent" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/compose_read_receipt" android:key="prefComposeReadReceipt" android:defaultValue="false" />
+    <Preference android:title="@string/compose_input_cc_label" android:key="prefComposeDefaultCC" />
+    <Preference android:title="@string/compose_input_bcc_label" android:key="prefComposeDefaultBCC" />
+    <Preference android:persistent="false" android:title="@string/prefs_compose_signatures" android:key="prefComposeSignatures" />
+</PreferenceScreen>

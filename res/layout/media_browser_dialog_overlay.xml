@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:layout_gravity="bottom|center" android:id="@id/media_browser_bottom_wrapper" android:background="?mediaPickerBottomBarColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="8.0dip" android:outlineProvider="bounds" class="org.kman.email2.media.MediaBottomBarWrapper">
+        <view android:id="@id/media_browser_button_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" class="org.kman.email2.media.MediaBottomBarLayout">
+            <org.kman.email2.view.CheckableImageView android:id="@id/media_browser_category_photos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:actionBarItemBackground" android:scaleType="center" android:contentDescription="@string/access_photos" />
+            <org.kman.email2.view.CheckableImageView android:id="@id/media_browser_category_files" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:actionBarItemBackground" android:scaleType="center" android:contentDescription="@string/access_files" />
+            <org.kman.email2.view.CheckableImageView android:id="@id/media_browser_category_saf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:actionBarItemBackground" android:scaleType="center" android:contentDescription="@string/access_files" />
+            <org.kman.email2.view.CheckableImageView android:id="@id/media_browser_category_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:actionBarItemBackground" android:scaleType="center" android:contentDescription="@string/access_history" />
+            <org.kman.email2.view.CheckableImageView android:id="@id/media_browser_category_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:actionBarItemBackground" android:scaleType="center" android:contentDescription="@string/access_other" />
+        </view>
+        <RelativeLayout android:id="@id/media_browser_select_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/media_browser_select_button" android:background="?android:selectableItemBackground" android:layout_width="@dimen/media_picker_category_button_size" android:layout_height="@dimen/media_picker_category_button_size" android:src="@drawable/ic_check_24dp" android:scaleType="center" android:contentDescription="@string/access_select" android:layout_alignParentEnd="true" />
+            <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/media_browser_select_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:layout_centerVertical="true" android:textAllCaps="true" android:fontFamily="@string/typeface_medium" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/media_browser_select_button" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </view>
+</FrameLayout>

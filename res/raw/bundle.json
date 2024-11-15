@@ -1,0 +1,32 @@
+{
+  "bundles": [
+    {
+      "id": "shopping",
+      "domains": [
+        "amazon.com",
+        "amazon.de",
+        "amazon.es",
+        "amazon.fr",
+        "amazon.it",
+        "amazon.co.uk",
+        "amazon.co.jp",
+        "paypal.com",
+        "ebay.com",
+        "target.com"
+      ]
+    },
+    {
+      "id": "social",
+      "domains": [
+        "twitter.com",
+        "facebook.com",
+        "facebookmail.com",
+        "instagram.com",
+        "youtube.com",
+        "linkedin.com",
+        "twitch.tv",
+        "reddit.com"
+      ]
+    }
+  ]
+}

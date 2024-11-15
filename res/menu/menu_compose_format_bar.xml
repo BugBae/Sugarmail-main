@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_text_box_outline_24dp" android:id="@id/format_insert_snippet" android:visible="false" android:title="@string/format_insert_snippet" />
+    <item android:icon="@drawable/ic_format_bold_24dp" android:id="@id/format_bold" android:title="@string/format_bold" android:checkable="true" />
+    <item android:icon="@drawable/ic_format_italic_24dp" android:id="@id/format_italic" android:title="@string/format_italic" android:checkable="true" />
+    <item android:icon="@drawable/ic_format_underlined_24dp" android:id="@id/format_underlined" android:title="@string/format_underlined" android:checkable="true" />
+    <item android:icon="@drawable/ic_format_quote_24dp" android:id="@id/format_blockquote" android:title="@string/format_blockquote" />
+    <item android:icon="@drawable/ic_format_color_text_24dp" android:id="@id/format_color_text" android:title="@string/format_color_text" />
+    <item android:icon="@drawable/ic_format_color_fill_24dp" android:id="@id/format_color_fill" android:title="@string/format_color_fill" />
+    <item android:icon="@drawable/ic_format_font_name_24dp" android:id="@id/format_font_name" android:title="@string/format_font_name" />
+    <item android:icon="@drawable/ic_format_font_size_24dp" android:id="@id/format_font_size" android:title="@string/format_font_size" />
+    <item android:icon="@drawable/ic_format_list_bulleted_24dp" android:id="@id/format_list_bulleted" android:title="@string/format_list_bulleted" />
+    <item android:icon="@drawable/ic_format_list_numbered_24dp" android:id="@id/format_list_numbered" android:title="@string/format_list_numbered" />
+    <item android:icon="@drawable/ic_format_indent_increase_24dp" android:id="@id/format_indent_increase" android:title="@string/format_indent_increase" />
+    <item android:icon="@drawable/ic_format_indent_decrease_24dp" android:id="@id/format_indent_decrease" android:title="@string/format_indent_decrease" />
+    <item android:icon="@drawable/ic_insert_link_24dp" android:id="@id/format_insert_link" android:title="@string/format_insert_link" />
+    <item android:icon="@drawable/ic_image_24dp" android:id="@id/format_insert_image" android:title="@string/format_insert_image" />
+    <item android:icon="@drawable/ic_format_clear_24dp" android:id="@id/format_clear" android:title="@string/format_clear" />
+</menu>

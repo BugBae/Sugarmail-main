@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/snippet_root" android:background="?android:selectableItemBackground" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/snippet_menu" android:background="?android:actionBarItemBackground" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_more_vert_24dp" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@string/access_overflow" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:gravity="center_vertical" android:id="@id/snippet_preview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:fontFamily="@string/typeface_light" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/snippet_menu" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="?android:colorAccent" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/snippet_status" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:fontFamily="@string/typeface_light" />
+</LinearLayout>

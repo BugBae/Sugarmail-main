@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_phone_24dp" android:id="@id/webview_context_phone" android:title="@string/webview_context_phone" />
+    <item android:icon="@drawable/ic_message_text_24dp" android:id="@id/webview_context_sms" android:title="@string/webview_context_sms" />
+    <item android:icon="@drawable/ic_content_copy_24dp" android:id="@id/webview_context_copy" android:title="@string/webview_context_copy" />
+    <item android:icon="@drawable/ic_share_variant_24dp" android:id="@id/webview_context_share" android:title="@string/webview_context_share" />
+    <item android:icon="@drawable/ic_account_box_24dp" android:id="@id/webview_context_contact" android:title="@string/webview_context_contact" />
+</menu>

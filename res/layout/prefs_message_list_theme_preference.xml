@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="340.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" class="org.kman.email2.view.MaxWidthLinearLayout">
+        <TextView android:id="@id/prefs_theme_light" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prefs_ui_theme_light" android:layout_weight="1.0" style="@style/ActionTextView.Accent" />
+        <TextView android:id="@id/prefs_theme_dark" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prefs_ui_theme_dark" android:layout_weight="1.0" style="@style/ActionTextView.Control" />
+    </view>
+</FrameLayout>

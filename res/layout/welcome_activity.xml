@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/welcome_panel" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/welcome_next" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_next" android:layout_alignParentEnd="true" style="@style/ActionTextView.Accent" />
+        <TextView android:id="@id/welcome_skip" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_skip" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/welcome_next" style="@style/ActionTextView.Accent" />
+        <TextView android:id="@id/welcome_start" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_start" android:layout_alignParentEnd="true" style="@style/ActionTextView.Accent" />
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/welcome_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/welcome_panel" />
+    <me.relex.circleindicator.CircleIndicator android:id="@id/welcome_indicator" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_above="@id/welcome_panel" app:ci_drawable="@drawable/ci_drawable" app:ci_drawable_unselected="@drawable/ci_drawable_unselected" />
+</RelativeLayout>

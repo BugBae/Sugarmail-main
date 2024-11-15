@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:title="@string/prefs_message_view_autofit_to_width" android:key="prefMessageViewAutofitToWidth" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/prefs_message_view_autolink_phone_numbers" android:key="prefMessageViewAutolinkPhoneNumbers" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/prefs_message_view_hide_quoted" android:key="prefMessageViewHideQuoted" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/prefs_message_view_block_linked" android:key="prefMessageViewBlockLinked" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/prefs_message_view_trust_contacts" android:key="prefMessageViewTrustContacts" android:dependency="prefMessageViewBlockLinked" android:defaultValue="true" />
+    <Preference android:persistent="false" android:title="@string/prefs_message_view_reset_saved" android:key="prefMessageViewResetSaved" android:dependency="prefMessageViewBlockLinked" />
+    <SwitchPreference android:title="@string/prefs_message_view_chrome_tabs" android:key="prefMessageViewChromeTabs" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/prefs_message_view_show_details" android:key="prefMessageViewShowDetails" android:defaultValue="false" />
+    <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_message_view_mark_read" android:key="prefMessageViewMarkRead" android:defaultValue="0" app:entryList="@array/prefs_message_view_mark_read_entry_list" app:valueList="@array/prefs_message_view_mark_read_value_list" />
+    <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_message_view_after_op" android:key="prefMessageViewAfterOp" android:defaultValue="1" app:entryList="@array/prefs_message_view_after_op_entry_list" app:valueList="@array/prefs_message_view_after_op_value_list" />
+</PreferenceScreen>

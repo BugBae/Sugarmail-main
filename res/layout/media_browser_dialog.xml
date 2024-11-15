@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:orientation="vertical" android:id="@id/media_browser_photo_tab" android:layout_width="fill_parent" android:layout_height="fill_parent" class="org.kman.email2.media.MediaPhotoTabView">
+        <TextView android:textSize="16.0sp" android:textColor="?android:colorAccent" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/media_browser_photo_select" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/media_picker_select_different_photos" android:singleLine="true" android:fontFamily="@string/typeface_medium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/media_browser_photo_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/media_picker_grid_padding" />
+    </view>
+    <view android:orientation="vertical" android:id="@id/media_browser_file_tab" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" class="org.kman.email2.media.MediaFileTabView">
+        <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:ellipsize="start" android:gravity="center_vertical" android:id="@id/media_browser_file_header" android:background="?android:colorBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:singleLine="true" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:elevation="2.0dip" android:outlineProvider="bounds" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/media_browser_file_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/media_picker_list_padding" />
+    </view>
+    <view android:orientation="vertical" android:id="@id/media_browser_saf_tab" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" class="org.kman.email2.media.MediaSafTabView">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/media_browser_saf_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/media_picker_list_padding" />
+    </view>
+    <view android:id="@id/media_browser_history_tab" android:layout_width="fill_parent" android:layout_height="fill_parent" class="org.kman.email2.media.MediaHistoryTabView">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/media_browser_history_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/media_picker_list_padding" />
+    </view>
+</FrameLayout>

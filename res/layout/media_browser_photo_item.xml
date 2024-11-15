@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.kman.email2.media.PhotoCellLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.kman.email2.media.PhotoImageView android:id="@id/media_browser_photo_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/access_preview" />
+    <org.kman.email2.view.CheckableImageView android:layout_gravity="end|center|top" android:id="@id/media_browser_photo_select" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/media_browser_photo_select" android:contentDescription="@string/access_select" android:layout_marginEnd="4.0dip" />
+</org.kman.email2.media.PhotoCellLayout>

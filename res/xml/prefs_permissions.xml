@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:persistent="false" android:title="@string/prefs_permissions_storage_title" android:key="prefPermissionStorage" android:summary="@string/prefs_permissions_storage_summary" />
+    <SwitchPreference android:persistent="false" android:title="@string/prefs_permissions_contacts_title" android:key="prefPermissionContacts" android:summary="@string/prefs_permissions_contacts_summary" />
+    <SwitchPreference android:persistent="false" android:title="@string/prefs_permissions_calendar_title" android:key="prefPermissionCalendar" android:summary="@string/prefs_permissions_calendar_summary" />
+</PreferenceScreen>

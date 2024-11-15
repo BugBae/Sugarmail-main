@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="account_server_settings_padding_sides">24.0dip</dimen>
+    <dimen name="media_picker_category_button_size">56.0dip</dimen>
+</resources>

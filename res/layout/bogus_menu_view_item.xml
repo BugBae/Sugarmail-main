@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView android:id="@id/bogus_menu_view_image" android:background="?android:actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:minWidth="48.0dip" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

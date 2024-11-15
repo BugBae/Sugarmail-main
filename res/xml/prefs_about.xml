@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.kman.email2.prefs.AboutPreference android:title="@string/prefs_about_header_title" />
+    <Preference android:persistent="false" android:title="@string/about_images_by_unsplash" android:key="prefAboutImagesByUnsplash" />
+    <Preference android:persistent="false" android:title="@string/about_third_party_licenses" android:key="prefAboutThirdPartyLicenses" />
+    <SwitchPreference android:title="@string/prefs_analytics_enable" android:key="prefAnalyticsEnable" android:defaultValue="true" />
+    <PreferenceCategory android:title="@string/about_logging">
+        <org.kman.prefsx.IntegerListPreference android:title="@string/prefs_enable_logging" android:key="prefEnableLogging" android:defaultValue="0" app:disableDependentsValue="0" app:entryList="@array/prefs_debug_log_entry_list" app:valueList="@array/prefs_debug_log_value_list" />
+        <SwitchPreference android:title="@string/prefs_verbose_logging" android:key="prefVerboseLogging" android:dependency="prefEnableLogging" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about_activation">
+        <org.kman.email2.purchase.ActivationCodePreference android:persistent="false" android:title="@string/about_enter_activation_code" android:key="prefActivationCode" />
+    </PreferenceCategory>
+</PreferenceScreen>

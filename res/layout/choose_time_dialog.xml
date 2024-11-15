@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/choose_time_settings" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="?android:actionBarSize" android:src="@drawable/ic_menu_settings_24dp" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@string/action_settings" android:layout_alignParentEnd="true" />
+        <TextView android:textAppearance="@android:style/TextAppearance.Material.WindowTitle" android:ellipsize="end" android:gravity="start|center" android:id="@id/choose_time_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:actionBarSize" android:singleLine="true" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" android:layout_toStartOf="@id/choose_time_settings" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/choose_time_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <DatePicker android:id="@id/choose_time_custom_date" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TimePicker android:id="@id/choose_time_custom_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/choose_time_button_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/choose_button_ok" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/ok" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" style="@style/ActionTextView.Accent" />
+        <TextView android:id="@id/choose_button_cancel" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/choose_button_ok" style="@style/ActionTextView.Accent" />
+    </RelativeLayout>
+</LinearLayout>

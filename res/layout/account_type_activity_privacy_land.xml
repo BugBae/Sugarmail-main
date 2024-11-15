@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:colorBackground" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" android:elevation="8.0dip" android:outlineProvider="bounds"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/account_type_cancel" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/ActionTextView.Accent" />
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:id="@id/account_type_policy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="24.0dip" android:layout_toEndOf="@id/account_type_cancel" />
+</RelativeLayout>

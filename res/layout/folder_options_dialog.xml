@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MaterialDialog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:id="@id/folder_sync_level_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/folder_sync_level_push" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/folder_sync_level_push" />
+            <RadioButton android:id="@id/folder_sync_level_pull" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/folder_sync_level_pull" />
+            <RadioButton android:id="@id/folder_sync_level_none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/folder_sync_level_none" />
+        </RadioGroup>
+        <CheckBox android:id="@id/folder_is_children_sync" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/folder_is_children_sync" />
+        <CheckBox android:id="@id/folder_is_in_combined" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/folder_is_in_combined" />
+    </LinearLayout>
+</ScrollView>

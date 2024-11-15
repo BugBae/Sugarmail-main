@@ -1,0 +1,26 @@
+{
+  "bundles": [
+    {
+      "id": "shopping",
+      "domains": [
+        "avito.ru",
+        "ozon.ru",
+        "qiwi.com",
+        "money.yandex.ru",
+        "beru.ru"
+      ]
+    },
+    {
+      "id": "social",
+      "domains": [
+        "ok.ru",
+        "vk.com",
+        "4pda.ru",
+        "drom.ru",
+        "d3.ru",
+        "pikabu.ru",
+        "habr.com"
+      ]
+    }
+  ]
+}

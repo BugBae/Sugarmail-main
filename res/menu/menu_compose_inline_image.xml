@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/format_image_insert_link" android:title="@string/format_insert_link" />
+    <item android:id="@id/format_image_scale_100" android:title="@string/format_image_scale_100" />
+    <item android:id="@id/format_image_scale_75" android:title="@string/format_image_scale_75" />
+    <item android:id="@id/format_image_scale_50" android:title="@string/format_image_scale_50" />
+    <item android:id="@id/format_image_scale_25" android:title="@string/format_image_scale_25" />
+    <item android:id="@id/format_image_rotate_left" android:title="@string/format_image_rotate_left" />
+    <item android:id="@id/format_image_rotate_right" android:title="@string/format_image_rotate_right" />
+    <item android:id="@id/format_image_delete" android:title="@string/format_image_delete" />
+</menu>

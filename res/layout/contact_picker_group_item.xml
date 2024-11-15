@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/group_item_root" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/group_item_checked" android:layout_width="@dimen/message_list_contact_size_small" android:layout_height="@dimen/message_list_contact_size_small" android:src="?android:listChoiceIndicatorMultiple" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentStart="true" class="org.kman.email2.view.CheckableImageView" />
+    <ImageView android:id="@id/group_item_expand" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_expand_more_24dp" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/group_item_title" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_toStartOf="@id/group_item_expand" android:layout_toEndOf="@id/group_item_checked" />
+</RelativeLayout>

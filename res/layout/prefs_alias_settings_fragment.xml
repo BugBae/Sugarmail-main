@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:theme="@style/AppThemeOverlay.DarkButtonPanel" android:id="@id/prefs_server_settings_bottom" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/prefs_server_settings_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prefs_server_settings_save" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@id/prefs_server_settings_bottom" android:layout_alignParentTop="true">
+        <view android:id="@id/prefs_server_settings_wrapper_simple" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/account_server_settings_padding_sides" android:paddingEnd="@dimen/account_server_settings_padding_sides" class="org.kman.email2.setup.AccountSettingBlockLayout">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@android:style/TextAppearance.Material.Title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/prefs_server_settings_simple_email" android:labelFor="@id/prefs_server_settings_your_email" />
+                <EditText android:id="@id/prefs_server_settings_your_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" />
+                <TextView android:textAppearance="@android:style/TextAppearance.Material.Small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_server_settings_label_margin_top" android:text="@string/prefs_server_settings_your_name" android:labelFor="@id/prefs_server_settings_your_name" />
+                <EditText android:id="@id/prefs_server_settings_your_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPersonName|textCapWords" />
+                <TextView android:textAppearance="@android:style/TextAppearance.Material.Small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_server_settings_label_margin_top" android:text="@string/prefs_server_settings_alias_name" android:labelFor="@id/prefs_server_settings_alias_name" />
+                <EditText android:id="@id/prefs_server_settings_alias_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textShortMessage" />
+                <CheckBox android:id="@id/prefs_server_settings_alias_has_outgoing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_server_settings_label_margin_top" android:text="@string/prefs_server_settings_alias_has_outgoing" />
+                <include android:id="@id/prefs_server_settings_outgoing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_server_settings_label_margin_top" layout="@layout/prefs_server_settings_block" />
+            </LinearLayout>
+        </view>
+    </ScrollView>
+</RelativeLayout>

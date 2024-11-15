@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:persistent="false" android:title="@string/prefs_security_pin_enabled" android:key="prefPinEnabled" />
+    <Preference android:persistent="false" android:title="@string/prefs_security_pin_change" android:key="prefPinChange" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/prefs_security_pin_fingerprint" android:key="prefPinFingerprint" />
+    <org.kman.prefsx.IntegerListPreference android:persistent="false" android:title="@string/prefs_security_pin_delay" android:key="prefPinLockDelay" android:dependency="prefPinEnabled" android:defaultValue="15" app:entryList="@array/prefs_security_pin_delay_entry_list" app:valueList="@array/prefs_security_pin_delay_value_list" />
+</PreferenceScreen>

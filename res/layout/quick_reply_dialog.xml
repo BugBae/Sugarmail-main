@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/quick_reply_subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:lines="1" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <EditText android:textSize="16.0sp" android:gravity="top" android:id="@id/quick_reply_send_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:hint="@string/compose_reply_hint" android:lines="3" android:layout_below="@id/quick_reply_subject" android:inputType="textMultiLine|textShortMessage" android:imeOptions="flagNoExtractUi|flagNoFullscreen" android:layout_toStartOf="@id/quick_reply_send_action" />
+    <ImageView android:id="@id/quick_reply_send_action" android:background="?android:actionBarItemBackground" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/ic_send_24dp" android:scaleType="center" android:layout_below="@id/quick_reply_subject" android:contentDescription="@string/action_send_now" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

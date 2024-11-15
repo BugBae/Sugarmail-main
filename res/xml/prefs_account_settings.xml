@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:icon="@drawable/ic_account_settings_server_settings" android:title="@string/prefs_server_settings" android:key="prefServerSettings" />
+    <Preference android:icon="@drawable/ic_account_settings_folder_settings" android:title="@string/prefs_folder_settings" android:key="prefFolderSettings" />
+    <Preference android:icon="@drawable/ic_account_settings_notifications" android:title="@string/prefs_notify_header_title" android:key="prefCustomNotifySettings" />
+    <Preference android:icon="@drawable/ic_account_settings_composing_and_sending" android:title="@string/prefs_compose_header_title" android:key="prefComposeSettings" />
+    <Preference android:icon="@drawable/ic_account_settings_options" android:title="@string/prefs_account_options_title" android:key="prefOptions" />
+    <Preference android:icon="@drawable/ic_account_settings_preload_attachments" android:title="@string/prefs_preload_settings" android:key="prefPreloadSettings" />
+    <Preference android:icon="@drawable/ic_delete_forever_24dp_danger" android:title="@string/prefs_remove_account" android:key="prefRemoveAccount" android:order="10000" />
+</PreferenceScreen>

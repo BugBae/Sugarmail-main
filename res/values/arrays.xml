@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="folder_sync_level_array">
+        <item>@string/folder_sync_level_none</item>
+        <item>@string/folder_sync_level_pull</item>
+        <item>@string/folder_sync_level_push</item>
+    </string-array>
+    <string-array name="prefs_account_list_expand_entry_list">
+        <item>@string/prefs_account_list_expand_none</item>
+        <item>@string/prefs_account_list_expand_unread</item>
+        <item>@string/prefs_account_list_expand_all</item>
+    </string-array>
+    <integer-array name="prefs_account_list_expand_value_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="prefs_account_list_swiping_entry_list">
+        <item>@string/prefs_account_list_swiping_none</item>
+        <item>@string/prefs_account_list_swiping_mark_read</item>
+        <item>@string/prefs_account_list_swiping_delete_all</item>
+    </string-array>
+    <integer-array name="prefs_account_list_swiping_value_list">
+        <item>0</item>
+        <item>20</item>
+        <item>21</item>
+    </integer-array>
+    <string-array name="prefs_account_options_mark_read_entry_list">
+        <item>@string/prefs_message_view_mark_read_app_setting</item>
+        <item>@string/prefs_message_view_mark_read_immediately</item>
+        <item>@string/prefs_message_view_mark_read_1s</item>
+        <item>@string/prefs_message_view_mark_read_3s</item>
+        <item>@string/prefs_message_view_mark_read_5s</item>
+        <item>@string/prefs_message_view_mark_read_never</item>
+    </string-array>
+    <integer-array name="prefs_account_options_mark_read_value_list">
+        <item>-2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>-1</item>
+    </integer-array>
+    <integer-array name="prefs_account_options_messages_to_sync_value_list">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>180</item>
+    </integer-array>
+    <string-array name="prefs_compose_quote_features_entry_list">
+        <item>@string/prefs_compose_quote_features_indent_reply</item>
+        <item>@string/prefs_compose_quote_features_indent_forward</item>
+        <item>@string/prefs_compose_quote_features_line_reply</item>
+        <item>@string/prefs_compose_quote_features_line_forward</item>
+    </string-array>
+    <integer-array name="prefs_compose_quote_features_value_list">
+        <item>1</item>
+        <item>2</item>
+        <item>16</item>
+        <item>32</item>
+    </integer-array>
+    <string-array name="prefs_compose_quote_format_entry_list">
+        <item>@string/prefs_compose_quote_format_gmail</item>
+        <item>@string/prefs_compose_quote_format_outlook</item>
+    </string-array>
+    <integer-array name="prefs_compose_quote_format_value_list">
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+    <string-array name="prefs_compose_resize_photos_entry_list">
+        <item>@string/prefs_compose_resize_photos_1280</item>
+        <item>@string/prefs_compose_resize_photos_2048</item>
+        <item>@string/prefs_compose_resize_photos_3072</item>
+        <item>@string/prefs_compose_resize_photos_4096</item>
+        <item>@string/prefs_compose_resize_photos_off</item>
+    </string-array>
+    <integer-array name="prefs_compose_resize_photos_value_list">
+        <item>1280</item>
+        <item>2048</item>
+        <item>3072</item>
+        <item>4096</item>
+        <item>0</item>
+    </integer-array>
+    <string-array name="prefs_debug_log_entry_list">
+        <item>@string/prefs_enable_logging_off</item>
+        <item>@string/prefs_enable_logging_system</item>
+        <item>@string/prefs_enable_logging_file</item>
+    </string-array>
+    <integer-array name="prefs_debug_log_value_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="prefs_font_name_entries">
+        <item>@string/prefs_compose_font_name_sans</item>
+        <item>@string/prefs_compose_font_name_serif</item>
+        <item>@string/prefs_compose_font_name_mono</item>
+    </string-array>
+    <string-array name="prefs_font_size_entries">
+        <item>24pt</item>
+        <item>20pt</item>
+        <item>16pt</item>
+        <item>14pt</item>
+        <item>12pt</item>
+        <item>10pt</item>
+        <item>8pt</item>
+    </string-array>
+    <string-array name="prefs_message_list_preview_lines_entry_list">
+        <item>@string/prefs_message_list_preview_lines_0</item>
+        <item>@string/prefs_message_list_preview_lines_1</item>
+        <item>@string/prefs_message_list_preview_lines_2</item>
+    </string-array>
+    <integer-array name="prefs_message_list_preview_lines_value_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="prefs_message_list_swiping_entry_list">
+        <item>@string/prefs_message_list_swiping_none</item>
+        <item>@string/prefs_message_list_swiping_mark_read</item>
+        <item>@string/prefs_message_list_swiping_set_star</item>
+        <item>@string/prefs_message_list_swiping_move_deleted</item>
+        <item>@string/prefs_message_list_swiping_delete_now</item>
+        <item>@string/prefs_message_list_swiping_move_archive</item>
+        <item>@string/prefs_message_list_swiping_move_spam</item>
+        <item>@string/prefs_message_list_swiping_block_sender</item>
+        <item>@string/prefs_message_list_swiping_move_to</item>
+        <item>@string/prefs_message_list_swiping_reply</item>
+        <item>@string/prefs_message_list_swiping_snooze</item>
+        <item>@string/prefs_message_list_swiping_categories</item>
+        <item>@string/prefs_message_list_swiping_add_to_bundle</item>
+        <item>@string/prefs_message_list_swiping_search_sender</item>
+    </string-array>
+    <integer-array name="prefs_message_list_swiping_value_list">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>12</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>13</item>
+        <item>15</item>
+        <item>14</item>
+    </integer-array>
+    <string-array name="prefs_message_list_varying_backgrounds_entry_list">
+        <item>@string/prefs_message_list_varying_backgrounds_none</item>
+        <item>@string/prefs_message_list_varying_backgrounds_mark_read</item>
+        <item>@string/prefs_message_list_varying_backgrounds_mark_unread</item>
+    </string-array>
+    <integer-array name="prefs_message_list_varying_backgrounds_value_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="prefs_message_view_after_op_entry_list">
+        <item>@string/prefs_message_view_after_op_close</item>
+        <item>@string/prefs_message_view_after_op_prev</item>
+        <item>@string/prefs_message_view_after_op_next</item>
+    </string-array>
+    <integer-array name="prefs_message_view_after_op_value_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="prefs_message_view_mark_read_entry_list">
+        <item>@string/prefs_message_view_mark_read_immediately</item>
+        <item>@string/prefs_message_view_mark_read_1s</item>
+        <item>@string/prefs_message_view_mark_read_3s</item>
+        <item>@string/prefs_message_view_mark_read_5s</item>
+        <item>@string/prefs_message_view_mark_read_never</item>
+    </string-array>
+    <integer-array name="prefs_message_view_mark_read_value_list">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>-1</item>
+    </integer-array>
+    <string-array name="prefs_notify_action_entry_list">
+        <item>@string/prefs_notify_action_none</item>
+        <item>@string/prefs_notify_action_delete</item>
+        <item>@string/prefs_notify_action_mark_read</item>
+        <item>@string/prefs_notify_action_snooze</item>
+        <item>@string/prefs_notify_action_archive</item>
+        <item>@string/prefs_notify_action_spam</item>
+        <item>@string/prefs_notify_action_block</item>
+    </string-array>
+    <integer-array name="prefs_notify_action_value_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>7</item>
+        <item>5</item>
+        <item>6</item>
+    </integer-array>
+    <string-array name="prefs_preload_since_entry_list">
+        <item>@string/prefs_preload_since_10d</item>
+        <item>@string/prefs_preload_since_14d</item>
+        <item>@string/prefs_preload_since_21d</item>
+        <item>@string/prefs_preload_since_30d</item>
+        <item>@string/prefs_preload_since_all</item>
+    </string-array>
+    <integer-array name="prefs_preload_since_value_list">
+        <item>10</item>
+        <item>14</item>
+        <item>21</item>
+        <item>30</item>
+        <item>-1</item>
+    </integer-array>
+    <string-array name="prefs_security_pin_delay_entry_list">
+        <item>@string/prefs_security_pin_delay_immediate</item>
+        <item>@string/prefs_security_pin_delay_15s</item>
+        <item>@string/prefs_security_pin_delay_30s</item>
+        <item>@string/prefs_security_pin_delay_1m</item>
+    </string-array>
+    <integer-array name="prefs_security_pin_delay_value_list">
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </integer-array>
+    <string-array name="prefs_server_settings_enc_exchange">
+        <item>@string/prefs_server_settings_enc_https</item>
+    </string-array>
+    <string-array name="prefs_server_settings_enc_internet">
+        <item>@string/prefs_server_settings_enc_none</item>
+        <item>@string/prefs_server_settings_enc_ssl</item>
+        <item>@string/prefs_server_settings_enc_tls</item>
+    </string-array>
+    <string-array name="prefs_ui_theme_auto_entry_list">
+        <item>@string/prefs_ui_theme_light</item>
+        <item>@string/prefs_ui_theme_dark</item>
+        <item>@string/prefs_ui_theme_auto</item>
+    </string-array>
+    <integer-array name="prefs_ui_theme_auto_value_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="prefs_ui_theme_entry_list">
+        <item>@string/prefs_ui_theme_light</item>
+        <item>@string/prefs_ui_theme_dark</item>
+    </string-array>
+    <integer-array name="prefs_ui_theme_value_list">
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+</resources>

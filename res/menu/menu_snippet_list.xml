@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/snippet_set_as_default" android:visible="false" android:title="@string/snippet_set_as_default" />
+    <item android:id="@id/snippet_set_as_reply" android:visible="false" android:title="@string/snippet_set_as_reply" />
+    <item android:id="@id/snippet_set_as_clear" android:visible="false" android:title="@string/snippet_set_as_clear" />
+    <item android:id="@id/snippet_delete" android:title="@string/snippet_delete" />
+</menu>

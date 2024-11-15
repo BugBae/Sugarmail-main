@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_delete_24dp" android:id="@id/action_move_deleted" android:title="@string/action_move_deleted" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_delete_forever_24dp" android:id="@id/action_delete_now_icon" android:visible="false" android:title="@string/action_delete_now" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_reply_24dp" android:id="@id/action_reply" android:title="@string/action_reply" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_compose_24dp" android:id="@id/action_edit_as_new" android:visible="false" android:title="@string/action_edit_as_new" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_reply_all_24dp" android:id="@id/action_reply_all" android:title="@string/action_reply_all" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_forward_24dp" android:id="@id/action_forward" android:title="@string/action_forward" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_visibility_24dp" android:title="@string/action_view">
+        <menu>
+            <item android:id="@id/action_font_larger" android:title="@string/action_font_larger" />
+            <item android:id="@id/action_font_smaller" android:title="@string/action_font_smaller" />
+            <item android:id="@id/action_force_white_enable" android:title="@string/action_force_white_enable" />
+            <item android:id="@id/action_force_white_disable" android:title="@string/action_force_white_disable" />
+            <item android:id="@id/action_revert_autofit" android:title="@string/action_revert_autofit" />
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_more_horiz_24dp" android:title="@string/action_more">
+        <menu>
+            <item android:id="@id/action_print" android:title="@string/action_print" />
+            <item android:id="@id/action_save_pdf" android:title="@string/action_save_pdf" />
+            <item android:id="@id/action_save_eml" android:title="@string/action_save_eml" />
+            <item android:id="@id/action_to_calendar" android:title="@string/action_to_calendar" />
+            <item android:id="@id/action_to_google_translate" android:title="@string/action_to_google_translate" />
+            <item android:id="@id/action_to_yandex_translate" android:title="@string/action_to_yandex_translate" />
+        </menu>
+    </item>
+    <item android:id="@id/action_reply_sender" android:visible="false" android:title="@string/action_reply_sender" />
+    <item android:icon="@drawable/ic_message_bulleted_off_24dp" android:id="@id/action_unsubscribe" android:title="@string/action_unsubscribe" />
+    <item android:icon="@drawable/ic_drafts_24dp" android:id="@id/action_mark_read" android:visible="false" android:title="@string/action_mark_read" />
+    <item android:icon="@drawable/ic_markunread_24dp" android:id="@id/action_mark_unread" android:visible="false" android:title="@string/action_mark_unread" />
+    <item android:icon="@drawable/ic_snooze_24dp" android:id="@id/action_snooze" android:title="@string/action_snooze" />
+    <item android:icon="@drawable/ic_list_24dp" android:id="@id/action_categories" android:visible="false" android:title="@string/action_categories" />
+    <item android:icon="@drawable/ic_playlist_plus_24dp" android:id="@id/action_add_to_bundle" android:title="@string/action_add_to_bundle" />
+    <item android:icon="@drawable/ic_folder_24dp" android:id="@id/action_move_to" android:title="@string/action_move_to" />
+    <item android:icon="@drawable/ic_archive_24dp" android:id="@id/action_move_archive" android:title="@string/action_move_archive" />
+    <item android:icon="@drawable/ic_alert_circle_24dp" android:id="@id/action_move_spam" android:title="@string/action_move_spam" />
+    <item android:icon="@drawable/ic_account_cancel_24dp" android:id="@id/action_block_sender" android:title="@string/action_block_sender" />
+    <item android:icon="@drawable/ic_delete_forever_24dp" android:id="@id/action_delete_now_text" android:title="@string/action_delete_now" />
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.kman.email2.view.AccountListAccountLayout android:id="@id/account_item_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/account_item_card" android:background="@drawable/account_list_account_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:elevation="4.0dip" android:outlineProvider="background">
+        <RelativeLayout android:id="@id/account_item_header" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/account_refresh_frame" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:measureAllChildren="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="center" android:id="@id/account_refresh_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_refresh_24dp" android:contentDescription="@string/access_refresh" />
+            </FrameLayout>
+            <org.kman.email2.view.FolderCountsView android:textSize="16.0sp" android:textColor="?accountListTextColorPrimary" android:gravity="center_vertical" android:id="@id/account_counts" android:background="?android:selectableItemBackground" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="120.0dip" android:minHeight="48.0dip" android:layout_centerVertical="true" android:fontFamily="@string/typeface_medium" android:paddingStart="16.0dip" android:layout_toStartOf="@id/account_refresh_frame" />
+            <ImageView android:id="@id/account_expand" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_expand_more_24dp" android:layout_centerVertical="true" android:contentDescription="@string/access_expand" />
+            <TextView android:textSize="@dimen/account_list_account_font_size" android:textColor="?accountListTextColorPrimary" android:ellipsize="end" android:gravity="start|center" android:id="@id/account_name" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:lines="1" android:drawablePadding="8.0dip" android:layout_centerVertical="true" android:fontFamily="@string/typeface_medium" android:textAlignment="viewStart" android:layout_toStartOf="@id/account_counts" android:layout_toEndOf="@id/account_expand" />
+        </RelativeLayout>
+        <include android:id="@id/account_error" android:visibility="gone" layout="@layout/message_list_header_error" />
+        <org.kman.email2.view.SwipeCommandLayout android:id="@id/account_folder_swipe" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <org.kman.email2.silly.SillyListView android:id="@id/account_folder_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </org.kman.email2.view.SwipeCommandLayout>
+    </LinearLayout>
+</org.kman.email2.view.AccountListAccountLayout>

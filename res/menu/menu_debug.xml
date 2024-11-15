@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/action_debug_menu">
+        <menu>
+            <item android:id="@id/action_debug_ui_lock_set" android:title="@string/action_debug_ui_lock_set" />
+            <item android:id="@id/action_debug_ui_lock_check" android:title="@string/action_debug_ui_lock_check" />
+            <item android:id="@id/action_debug_threads_reindex" android:title="@string/action_debug_threads_reindex" />
+            <item android:id="@id/action_debug_search_reindex" android:title="@string/action_debug_search_reindex" />
+            <item android:id="@id/action_debug_delete_stored_files" android:title="@string/action_debug_delete_stored_files" />
+            <item android:id="@id/action_debug_welcome" android:title="@string/action_debug_welcome" />
+            <item android:id="@id/action_debug_purchase_prompt" android:title="@string/action_debug_purchase_prompt" />
+            <item android:id="@id/action_debug_purchase_screen" android:title="@string/action_debug_purchase_screen" />
+            <item android:id="@id/action_debug_reset_help_prompts" android:title="@string/action_debug_reset_help_prompts" />
+            <item android:id="@id/action_debug_reset_purchase_data" android:title="@string/action_debug_reset_purchase_data" />
+        </menu>
+    </item>
+</menu>

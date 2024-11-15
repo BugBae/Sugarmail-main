@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_save" android:title="@string/action_save" />
+    <item android:id="@id/action_add_formatting" android:title="@string/action_add_formatting" />
+    <item android:id="@id/action_remove_formatting" android:title="@string/action_remove_formatting" />
+    <item android:id="@id/action_insert_html" android:title="@string/action_insert_html" />
+</menu>

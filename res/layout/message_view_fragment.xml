@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.kman.email2.view.MessageViewOverlay android:id="@id/message_view_text_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" layout="@layout/message_view_header" />
+        <TextView android:layout_gravity="top" android:id="@id/message_view_read_receipt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/message_view_read_receipt" style="@style/MessageViewActionTextView" />
+        <TextView android:ellipsize="middle" android:layout_gravity="top" android:id="@id/message_view_show_linked" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/message_view_show_linked" style="@style/MessageViewActionTextView" />
+        <ViewStub android:layout_gravity="top" android:id="@id/message_view_calendar_item_stub" android:visibility="gone" android:layout="@layout/message_view_calendar_item" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/message_view_part_list_wrapper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <view android:id="@id/message_view_part_list_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" class="org.kman.email2.view.MessagePartListView" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/message_view_part_wrapper_all" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/message_view_part_list_save_all" android:background="?android:selectableItemBackground" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/message_view_save_all_attachments" android:layout_weight="1.0" style="@style/MessageViewActionTextView" />
+                <TextView android:id="@id/message_view_part_list_share_all" android:background="?android:selectableItemBackground" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/message_view_share_all_attachments" android:layout_weight="1.0" style="@style/MessageViewActionTextView" />
+            </LinearLayout>
+            <TextView android:id="@id/message_view_part_list_show" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_view_show_attachments" style="@style/MessageViewActionTextView" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorError" android:layout_gravity="top" android:id="@id/message_view_error" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </org.kman.email2.view.MessageViewOverlay>
+    <org.kman.email2.view.MessageViewScrollIndicators android:id="@id/message_view_scroll_indicators" android:scrollbars="horizontal|vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/message_view_print_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>
